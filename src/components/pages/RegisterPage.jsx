@@ -69,29 +69,29 @@ const RegisterPage = () => {
               <div class="card">
                 <article class="card-body">
                   <header class="mb-4">
-                    <h4 class="card-title">Üye Ol</h4>
+                    <h4 class="card-title">Register</h4>
                   </header>
                   <form onSubmit={uyeOl}>
                     <div class="form-row">
                       <div class="col form-group">
-                        <label>İsim</label>
+                        <label>Name</label>
                         <input
-                          name="isim"
+                          name="name"
                           autoComplete="off"
                           type="text"
                           class="form-control"
-                          placeholder="İsim giriniz"
+                          placeholder="Enter name"
                           required
                         />
                       </div>
                       <div class="col form-group">
-                        <label>Soyisim</label>
+                        <label>Surname</label>
                         <input
-                          name="soyisim"
+                          name="surname"
                           autoComplete="off"
                           type="text"
                           class="form-control"
-                          placeholder="Soyisim giriniz"
+                          placeholder="Enter surname"
                           required
                         />
                       </div>
@@ -106,21 +106,21 @@ const RegisterPage = () => {
                           class={`form-control ${
                             state.sonuc === 2 && "is-invalid"
                           }`}
-                          placeholder="Email giriniz"
+                          placeholder="Enter email"
                           required
                         />
                         <small class="form-text text-muted">
                           {state.sonuc === 2
-                            ? "Bu email zaten kullanılıyor"
-                            : "Email adresiniz giriş için gerekli."}
+                            ? "This email is already in use"
+                            : "Your email address is required for login."}
                         </small>
                       </div>
                       <div class="col form-group">
-                        <label>Telefon</label>
+                        <label>Phone</label>
                         <input
-                          name="telefon"
+                          name="phone"
                           class="form-control"
-                          placeholder="Telefon no giriniz"
+                          placeholder="Enter phone number"
                           required
                         />
                       </div>
@@ -130,38 +130,38 @@ const RegisterPage = () => {
                         <input
                           class="custom-control-input"
                           type="radio"
-                          name="cinsiyet"
-                          value="Erkek"
+                          name="gender"
+                          value="Men"
                         />
-                        <span class="custom-control-label"> Erkek </span>
+                        <span class="custom-control-label"> Men </span>
                       </label>
                       <label class="custom-control custom-radio custom-control-inline">
                         <input
                           class="custom-control-input"
                           type="radio"
-                          name="cinsiyet"
-                          value="Kadın"
+                          name="gender"
+                          value="Women"
                         />
-                        <span class="custom-control-label"> Kadın </span>
+                        <span class="custom-control-label"> Woman </span>
                       </label>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-sm-12">
-                        <label>Adres</label>
+                        <label>Adress</label>
                         <input
-                          name="adres"
+                          name="adress"
                           required
                           type="text"
                           class="form-control"
-                          placeholder="Adres giriniz"
+                          placeholder="Enter adress"
                         />
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <label>Şifre oluştur</label>
+                        <label>Create password</label>
                         <input
-                          name="sifre"
+                          name="password"
                           class={`form-control ${
                             state.sonuc === 3 && "is-invalid"
                           }`}
@@ -170,14 +170,14 @@ const RegisterPage = () => {
                         />
                         <small class="form-text text-muted">
                           {state.sonuc === 3
-                            ? "Şifreler aynı değil."
-                            : "Şifre en az 8 karakterden oluşmalı"}
+                            ? "Passwords are not the same."
+                            : "Password must be at least 8 characters"}
                         </small>
                       </div>
                       <div class="form-group col-md-6">
-                        <label>Şifre Tekrarı</label>
+                        <label>Password Repeat</label>
                         <input
-                          name="resifre"
+                          name="repassword"
                           class={`form-control ${
                             state.sonuc === 3 && "is-invalid"
                           }`}
@@ -193,7 +193,7 @@ const RegisterPage = () => {
                         disabled={`${state.durum === 0 ? "" : "disabled"}`}
                       >
                         {state.durum === 0 ? (
-                          "Kayıt Ol"
+                          "Register"
                         ) : (
                           <div
                             class="spinner-border spinner-border-sm"
@@ -205,13 +205,12 @@ const RegisterPage = () => {
                       </button>
                     </div>
                     <p class="text-muted">
-                      "Kayıt ol" butonuna tıklayarak gizlilik sözleşmesini kabul
-                      etmiş olursunuz.
+                      By clicking the register button, you accept the confidentiality agreement.
                     </p>
                   </form>
                   <hr />
                   <p class="text-center">
-                    Zaten üye misin ? <a href="/giris">Giriş Yap</a>
+                  Already a member ? <a href="/giris">Login</a>
                   </p>
                 </article>
               </div>

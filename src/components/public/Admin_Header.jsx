@@ -35,7 +35,7 @@ const Admin_Header = () => {
           <a className="navbar-brand" href="/admin/anasayfa">
             <b className="logo-icon">
               <img
-                src="../../assets/images/logo-icon.png"
+                src="../../assets/images/logo-light-icon.png"
                 alt="homepage"
                 className="dark-logo"
                 height="40px"

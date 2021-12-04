@@ -103,18 +103,18 @@ const AdminAddProductPage = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-5">
-                <h4 className="page-title">Ürün Ekle</h4>
+                <h4 className="page-title">Add Product</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Anasayfa</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Ürün Ekle
+                        Add Product
                       </li>
                     </ol>
                   </nav>
@@ -135,17 +135,17 @@ const AdminAddProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="isim"
-                            placeholder="Başlık"
+                            name="name"
+                            placeholder="name"
                           />
                         </div>
                       </div>
                       <div className="row mb-2">
                         <div className="col-md-6 ">
                           <div className="bg-light p-2 rounded  d-flex align-items-center ">
-                            <span class="w-25">Kategori</span>
+                            <span class="w-25">Category</span>
                             <select
-                              name="kategori"
+                              name="category"
                               class=" w-75 float-right rounded border-light"
                             >
                               {kategoriler.map(function (kategori) {
@@ -163,33 +163,33 @@ const AdminAddProductPage = () => {
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Erkek"
+                                value="Men"
                                 type="radio"
                                 id="customRadioInline1"
-                                name="cinsiyet"
+                                name="gender"
                                 class="custom-control-input"
                               />
                               <label
                                 class="custom-control-label"
                                 for="customRadioInline1"
                               >
-                                Erkek
+                                Men
                               </label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Kadın"
+                                value="Women"
                                 type="radio"
                                 id="customRadioInline2"
-                                name="cinsiyet"
+                                name="gender"
                                 class="custom-control-input"
                               />
                               <label
                                 class="custom-control-label"
                                 for="customRadioInline2"
                               >
-                                Kadın
+                                Women
                               </label>
                             </div>
                           </div>
@@ -202,8 +202,8 @@ const AdminAddProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="ind_fiyat"
-                            placeholder="İndirimli Fiyat"
+                            name="dis_price"
+                            placeholder="Discounted Price"
                           />
                         </div>
                         <div className="col">
@@ -212,8 +212,8 @@ const AdminAddProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="normal_fiyat"
-                            placeholder="Normal Fiyat"
+                            name="normal_price"
+                            placeholder="Normal Price"
                           />
                         </div>
                       </div>
@@ -224,8 +224,8 @@ const AdminAddProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="marka"
-                            placeholder="Marka"
+                            name="brand"
+                            placeholder="Brand"
                           />
                         </div>
                         <div className="col">
@@ -233,20 +233,20 @@ const AdminAddProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="renk"
-                            placeholder="Renk"
+                            name="color"
+                            placeholder="Color"
                           />
                         </div>
                       </div>
                       <textarea
-                        placeholder="Açıklama"
+                        placeholder="Description"
                         required
                         className="form-control mb-2"
-                        name="aciklama"
+                        name="description"
                         rows="3"
                       ></textarea>
 
-                      <div className="pt-1 pb-0">Stok Sayısı Giriniz</div>
+                      <div className="pt-1 pb-0">Enter Number of Stoock</div>
                       <hr className="p-0 mt-2" />
                       <div className="row">
                         <div className="col-md-6 col-lg-3 col-sm-12">
@@ -261,7 +261,7 @@ const AdminAddProductPage = () => {
                               name="s"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -278,7 +278,7 @@ const AdminAddProductPage = () => {
                               name="m"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -295,7 +295,7 @@ const AdminAddProductPage = () => {
                               name="l"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -312,7 +312,7 @@ const AdminAddProductPage = () => {
                               name="xl"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -323,7 +323,7 @@ const AdminAddProductPage = () => {
                       <div>
                         <div className="">
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 1 </span>
+                            <span>Image 1 </span>
 
                             <input
                               required
@@ -338,7 +338,7 @@ const AdminAddProductPage = () => {
                         </div>
                         <div className="">
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 2 </span>
+                            <span>Image 2 </span>
 
                             <input
                               ref={el}
@@ -353,7 +353,7 @@ const AdminAddProductPage = () => {
                         </div>
                         <div className="">
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 3 </span>
+                            <span>Image 3 </span>
 
                             <input
                               ref={el}
@@ -368,7 +368,7 @@ const AdminAddProductPage = () => {
                         </div>
                         <div className="">
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 4 </span>
+                            <span>Image 4 </span>
 
                             <input
                               required
@@ -391,13 +391,13 @@ const AdminAddProductPage = () => {
                             aria-valuemin="0"
                             aria-valuemax="100"
                           >
-                            {progress} Yüklendi
+                            {progress} Uploaded
                           </div>
                         </div>
                         <input
                           className="w-100  btn btn-danger mb-2"
                           type="submit"
-                          value="Ekle"
+                          value="Add"
                         />
                       </div>
                     </div>

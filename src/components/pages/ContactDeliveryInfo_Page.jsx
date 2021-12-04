@@ -69,15 +69,15 @@ const ContactDeliveryInfo_Page = () => {
                       id="flexRadioDefault1"
                     />
                     <label className="form-check-label" for="flexRadioDefault1">
-                      Kendi bilgilerimi kullan.
+                    Use my own information.
                     </label>
                     <div className="bg-light border border-sm rounded p-2 m-2">
-                      İsim : {kullaniciBilgileri.isim}{" "}
+                      Name : {kullaniciBilgileri.isim}{" "}
                       {kullaniciBilgileri.soyisim}
                       <br />
-                      Adres : {kullaniciBilgileri.adres}
+                      Adress : {kullaniciBilgileri.adres}
                       <br />
-                      Telefon : {kullaniciBilgileri.telefon}
+                      Phone : {kullaniciBilgileri.telefon}
                       <br />
                       Email : {kullaniciBilgileri.email}
                     </div>
@@ -92,7 +92,7 @@ const ContactDeliveryInfo_Page = () => {
                       id="flexRadioDefault2"
                     />
                     <label className="form-check-label" for="flexRadioDefault2">
-                      Yeni iletişim bilgisi girmek istiyorum.
+                    I want to enter new contact information.
                     </label>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ const ContactDeliveryInfo_Page = () => {
                 <React.StrictMode>
                   <article className="card mb-4">
                     <div className="card-body">
-                      <h4 className="card-title mb-4">İletişim Bilgileri</h4>
+                      <h4 className="card-title mb-4">Contact Information</h4>
                       <form action="">
                         <div className="row">
                           <div className="form-group col-sm-6">
@@ -109,31 +109,31 @@ const ContactDeliveryInfo_Page = () => {
                             <input
                               defaultValue={yeniBilgiler.isim}
                               onChange={bilgiEkle}
-                              name="isim"
+                              name="name"
                               type="text"
-                              placeholder="İsim giriniz"
+                              placeholder="Enter name"
                               className="form-control"
                             />
                           </div>
                           <div className="form-group col-sm-6">
-                            <label>Soyisim</label>
+                            <label>Surname</label>
                             <input
                               defaultValue={yeniBilgiler.soyisim}
                               onChange={bilgiEkle}
-                              name="soyisim"
+                              name="surname"
                               type="text"
-                              placeholder="Soyisim giriniz"
+                              placeholder="Enter Surname"
                               className="form-control"
                             />
                           </div>
                           <div className="form-group col-sm-6">
-                            <label>Telefon</label>
+                            <label>Phone</label>
                             <input
                               defaultValue={yeniBilgiler.telefon}
                               onChange={bilgiEkle}
-                              name="telefon"
+                              name="phone"
                               type="text"
-                              placeholder="Telefonunuzu giriniz"
+                              placeholder="Enter phone number"
                               className="form-control"
                             />
                           </div>
@@ -144,7 +144,7 @@ const ContactDeliveryInfo_Page = () => {
                               onChange={bilgiEkle}
                               name="email"
                               type="email"
-                              placeholder="E-mail'inizi girniz"
+                              placeholder="Enter email"
                               className="form-control"
                             />
                           </div>
@@ -152,13 +152,13 @@ const ContactDeliveryInfo_Page = () => {
 
                         <div className="row">
                           <div className="form-group col">
-                            <label>Adres</label>
+                            <label>Adress</label>
                             <input
                               defaultValue={yeniBilgiler.adres}
                               onChange={bilgiEkle}
-                              name="adres"
+                              name="adress"
                               type="text"
-                              placeholder="Adresinizi giriniz"
+                              placeholder="Enter adress"
                               className="form-control"
                             />
                           </div>
@@ -174,7 +174,7 @@ const ContactDeliveryInfo_Page = () => {
               <div className="card">
                 <div className="card-body">
                   <dl className="dlist-align">
-                    <dt>Toplam:</dt>
+                    <dt>Total:</dt>
                     <dd className="text-right text-dark b">
                       <strong>₺{toplam.toFixed(2)}</strong>
                     </dd>
@@ -220,11 +220,11 @@ const ContactDeliveryInfo_Page = () => {
                         }
                         `}
                   >
-                    Ödeme Yap
+                    Pay
                   </Link>
 
                   <a href="#" className="btn btn-light btn-block">
-                    Alışverişe Devam Et
+                  Continue Shopping
                   </a>
                 </div>
               </div>

@@ -43,18 +43,18 @@ const AdminCommentList = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-9">
-                <h4 className="page-title">Yorum Listesi</h4>
+                <h4 className="page-title">Comment List</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Anasayfa</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Tüm Yorumlar
+                        All Comments
                       </li>
                     </ol>
                   </nav>
@@ -68,7 +68,7 @@ const AdminCommentList = () => {
           <div className="row ">
             <main role="main" className="col bg-white mt-3">
               <div className="p-3">
-                {yorumYok === true && "Herhangi bir yorum bulunamadı."}
+                {yorumYok === true && "No comments found."}
 
                 {yorumlar.map(function (yorum) {
                   return (
@@ -96,7 +96,7 @@ const AdminCommentList = () => {
                     className={`page-link`}
                     href={`?sayfa=${parseInt(sayfa) - 1}`}
                   >
-                    Önceki Sayfa
+                    Previous page
                   </a>
                 ) : (
                   <span className=" disabled"></span>
@@ -105,7 +105,7 @@ const AdminCommentList = () => {
 
               <div>
                 <a className="page-link" href={`?sayfa=${parseInt(sayfa) + 1}`}>
-                  Sonraki Sayfa
+                Next page
                 </a>
               </div>
             </div>

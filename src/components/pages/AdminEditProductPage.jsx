@@ -172,18 +172,18 @@ const AdminEditProductPage = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-5">
-                <h4 className="page-title">Ürün Düzenle</h4>
+                <h4 className="page-title">Edit Product</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Anasayfa</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Seçili Ürünü Düzenle
+                        Edit Selected Product
                       </li>
                     </ol>
                   </nav>
@@ -213,9 +213,9 @@ const AdminEditProductPage = () => {
                       <div className="row mb-2">
                         <div className="col-md-6 ">
                           <div className="bg-light p-2 rounded  d-flex align-items-center ">
-                            <span class="w-25">Kategori</span>
+                            <span class="w-25">Category</span>
                             <select
-                              name="kategori"
+                              name="category"
                               class=" w-75 float-right rounded border-light"
                             >
                               {kategori !== undefined &&
@@ -241,37 +241,37 @@ const AdminEditProductPage = () => {
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Erkek"
+                                value="Men"
                                 type="radio"
                                 id="customRadioInline1"
-                                name="cinsiyet"
+                                name="gender"
                                 class="custom-control-input"
-                                checked={cinsiyet === "Erkek" ? true : false}
+                                checked={cinsiyet === "Men" ? true : false}
                                 onChange={cinsiyetDegistir}
                               />
                               <label
                                 class="custom-control-label"
                                 for="customRadioInline1"
                               >
-                                Erkek
+                                Men
                               </label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Kadın"
+                                value="Women"
                                 type="radio"
                                 id="customRadioInline2"
-                                name="cinsiyet"
+                                name="gender"
                                 class="custom-control-input"
-                                checked={cinsiyet === "Kadın" ? true : false}
+                                checked={cinsiyet === "Women" ? true : false}
                                 onChange={cinsiyetDegistir}
                               />
                               <label
                                 class="custom-control-label"
                                 for="customRadioInline2"
                               >
-                                Kadın
+                                Women
                               </label>
                             </div>
                           </div>
@@ -284,8 +284,8 @@ const AdminEditProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="ind_fiyat"
-                            placeholder="İndirimli Fiyat"
+                            name="Discounted_price"
+                            placeholder="Discounted price"
                             defaultValue={ind_fiyat}
                           />
                         </div>
@@ -295,8 +295,8 @@ const AdminEditProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="normal_fiyat"
-                            placeholder="Normal Fiyat"
+                            name="normal_price"
+                            placeholder="Normal Price"
                             defaultValue={normal_fiyat}
                           />
                         </div>
@@ -308,8 +308,8 @@ const AdminEditProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="marka"
-                            placeholder="Marka"
+                            name="brand"
+                            placeholder="Brand"
                             defaultValue={marka}
                           />
                         </div>
@@ -318,22 +318,22 @@ const AdminEditProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="renk"
-                            placeholder="Renk"
+                            name="color"
+                            placeholder="Color"
                             defaultValue={renk}
                           />
                         </div>
                       </div>
                       <textarea
-                        placeholder="Açıklama"
+                        placeholder="Description"
                         required
                         className="form-control mb-2"
-                        name="aciklama"
+                        name="description"
                         rows="3"
                         defaultValue={aciklama}
                       ></textarea>
 
-                      <div className="pt-1 pb-0">Stok Sayısı Giriniz</div>
+                      <div className="pt-1 pb-0">Enter Number of Stocks</div>
                       <hr className="p-0 mt-2" />
                       <div className="row">
                         <div className="col-md-6 col-lg-3 col-sm-12">
@@ -348,7 +348,7 @@ const AdminEditProductPage = () => {
                               name="s"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Please enter quantity"
                               aria-describedby="basic-addon1"
                               defaultValue={s}
                             />
@@ -366,7 +366,7 @@ const AdminEditProductPage = () => {
                               name="m"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Please enter quantity"
                               aria-describedby="basic-addon1"
                               defaultValue={m}
                             />
@@ -384,7 +384,7 @@ const AdminEditProductPage = () => {
                               name="l"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Please enter quantity"
                               aria-describedby="basic-addon1"
                               defaultValue={l}
                             />
@@ -402,7 +402,7 @@ const AdminEditProductPage = () => {
                               name="xl"
                               type="number"
                               class="form-control"
-                              placeholder="Sayı Giriniz"
+                              placeholder="Please enter quantity"
                               aria-describedby="basic-addon1"
                               defaultValue={xl}
                             />
@@ -414,7 +414,7 @@ const AdminEditProductPage = () => {
                       <div>
                         {res1 === "" || res1 === undefined ? (
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 1 </span>
+                            <span>Image 1 </span>
 
                             <input
                               required
@@ -438,7 +438,7 @@ const AdminEditProductPage = () => {
                         )}
                         {res2 === "" || res2 === undefined ? (
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 2 </span>
+                            <span>Image 2 </span>
 
                             <input
                               ref={el}
@@ -462,7 +462,7 @@ const AdminEditProductPage = () => {
                         )}
                         {res3 === "" || res3 === undefined ? (
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 3 </span>
+                            <span>Image 3 </span>
 
                             <input
                               ref={el}
@@ -486,7 +486,7 @@ const AdminEditProductPage = () => {
                         )}
                         {res4 === "" || res4 === undefined ? (
                           <div className="col form-control mb-2 p-2 d-flex align-items-center">
-                            <span>Resim 4 </span>
+                            <span>Image 4 </span>
 
                             <input
                               required
@@ -518,13 +518,13 @@ const AdminEditProductPage = () => {
                             aria-valuemin="0"
                             aria-valuemax="100"
                           >
-                            {progress} Yüklendi
+                            {progress} Uploaded
                           </div>
                         </div>
                         <input
                           className="w-100  btn btn-danger mb-2"
                           type="submit"
-                          value="Güncelle"
+                          value="Update"
                         />
                       </div>
                     </div>

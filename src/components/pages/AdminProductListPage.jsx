@@ -66,18 +66,18 @@ const AdminProductListPage = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-9">
-                <h4 className="page-title">Ürün Listesi</h4>
+                <h4 className="page-title">Product List</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Anasayfa</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Ürün Listesi
+                        Product List
                       </li>
                     </ol>
                   </nav>
@@ -90,7 +90,7 @@ const AdminProductListPage = () => {
                       onChange={urunAra}
                       class="form-control mr-sm-2"
                       type="search"
-                      placeholder="Ürün İsmi Giriniz"
+                      placeholder="Enter product name"
                       aria-label="Search"
                     />
                   </div>
@@ -101,18 +101,18 @@ const AdminProductListPage = () => {
           <div className="row">
             <main role="main" className="col bg-white mt-3 p-3">
               <table class="table">
-                <caption>Ürün Listesi</caption>
+                <caption>Product List</caption>
                 <thead>
                   <tr>
                     <th scope="col"></th>
-                    <th scope="col">İsim</th>
-                    <th scope="col">Kategori</th>
-                    <th scope="col">Marka</th>
-                    <th scope="col">İnd. Fiyat</th>
-                    <th scope="col">Nor. Fiyat</th>
-                    <th scope="col">Satış Sayısı</th>
-                    <th scope="col">Stok</th>
-                    <th scope="col">İşlem</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Discounted price</th>
+                    <th scope="col">Normal Price</th>
+                    <th scope="col">Number of Sales</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Process</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -136,13 +136,13 @@ const AdminProductListPage = () => {
                             id={urun._id}
                             className="btn btn-danger"
                           >
-                            Sil
+                            Delete
                           </button>
                           <a
                             href={`/admin/urun_duzenle?id=${urun._id}`}
                             className="ml-2 btn btn-dark"
                           >
-                            Düzenle
+                            Edit
                           </a>
                         </td>
                       </tr>

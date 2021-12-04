@@ -32,7 +32,7 @@ const AdminCategoriesPage = () => {
         setKategoriler(function (oncekiVeriler) {
           return [...oncekiVeriler, gelenVeri.data];
         });
-        toast.success("Kategori oluşturuldu.");
+        toast.success("Category created.");
       });
 
     event.preventDefault();
@@ -58,18 +58,18 @@ const AdminCategoriesPage = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-9">
-                <h4 className="page-title">Kategori Listesi</h4>
+                <h4 className="page-title">Category List</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Anasayfa</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Tüm Kategoriler
+                        All Categories
                       </li>
                     </ol>
                   </nav>
@@ -83,15 +83,15 @@ const AdminCategoriesPage = () => {
           <div className="row ">
             <main role="main" className="col bg-white mt-3">
               <form onSubmit={kategoriOlustur} className="p-3 m-3 bg-light">
-                Kategori Ekle
+                Add Category
                 <div className="form-row mt-2">
                   <div className="form-group col-md-6">
                     <input
                       type="text"
                       className="form-control"
                       id="inputEmail4"
-                      name="isim"
-                      placeholder="İsim giriniz"
+                      name="name"
+                      placeholder="Enter Name"
                     />
                   </div>
                   <div className="form-group col-md-6">
@@ -100,7 +100,7 @@ const AdminCategoriesPage = () => {
                       className="form-control"
                       id="inputPassword4"
                       name="url"
-                      placeholder="URL giriniz"
+                      placeholder="Enter URL"
                     />
                   </div>
                 </div>
@@ -110,14 +110,14 @@ const AdminCategoriesPage = () => {
                       type="text"
                       className="form-control"
                       id="inputAddress"
-                      name="aciklama"
-                      placeholder="Açıklama giriniz"
+                      name="description"
+                      placeholder="Enter description"
                     />
                   </div>
 
                   <div className="form-group col-md-1 d-flex align-items-end justify-content-center">
                     <button type="submit" className="btn btn-primary">
-                      Kaydet
+                      Save
                     </button>
                   </div>
                 </div>

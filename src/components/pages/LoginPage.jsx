@@ -65,15 +65,13 @@ const LoginPage = () => {
             <aside className="col-md-4">
               <div className="card">
                 <div className="card-body">
-                  <h4 className="card-title mb-4">Giriş Yap</h4>
+                  <h4 className="card-title mb-4">Login</h4>
                   <form onSubmit={girisYap}>
                     <a href="#" className="btn btn-facebook btn-block mb-2">
-                      <i className="fab fa-facebook-f"></i> &nbsp; Facebook ile
-                      giriş yap
+                      <i className="fab fa-facebook-f"></i> &nbsp; Login with Facebook
                     </a>
                     <a href="#" className="btn btn-google btn-block mb-4">
-                      <i className="fab fa-google"></i> &nbsp; Google ile giriş
-                      yap
+                      <i className="fab fa-google"></i> &nbsp; Login with Google
                     </a>
                     <div className="form-group">
                       <div className="input-group">
@@ -87,7 +85,7 @@ const LoginPage = () => {
                           required
                           name="email"
                           className="form-control"
-                          placeholder="Email giriniz"
+                          placeholder="Enter Email"
                           type="text"
                         />
                       </div>
@@ -100,9 +98,9 @@ const LoginPage = () => {
                           </span>
                         </div>
                         <input
-                          name="sifre"
+                          name="password"
                           className="form-control"
-                          placeholder="Şifrenizi giriniz"
+                          placeholder="Enter password"
                           type="password"
                           required
                         />
@@ -123,15 +121,15 @@ const LoginPage = () => {
                             <span className="sr-only">Loading...</span>
                           </div>
                         ) : (
-                          "Giriş Yap"
+                          "Login"
                         )}
                       </button>
                     </div>
 
                     <div className="form-group text-center">
                       <small>
-                        {durum === 1 && "Giriş başarılı, lütfen bekleyin.."}
-                        {durum === 2 && "Email ya da şifre hatalı."}
+                        {durum === 1 && "Login successful, please wait.."}
+                        {durum === 2 && "Email or password is incorrect."}
                       </small>
                     </div>
                   </form>

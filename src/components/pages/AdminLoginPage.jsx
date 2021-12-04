@@ -3,13 +3,13 @@ import React, { useState } from "react";
 
 function Giris(props) {
   const [girisYapildiMi, setGiris] = useState(false);
-  const [butonYazisi, setButonYazi] = useState("Giriş Yap");
+  const [butonYazisi, setButonYazi] = useState("Login");
   const [denendiMi, setDenenme] = useState(false);
-  const [baslik, setBaslik] = useState("Giriş Yapınız");
+  const [baslik, setBaslik] = useState("Login");
 
   function girisYap(event) {
     event.preventDefault();
-    setButonYazi("Lütfen bekleyiniz..");
+    setButonYazi("Please wait..");
 
     axios
       .post(
@@ -26,14 +26,14 @@ function Giris(props) {
         if (gelenVeri.data.sonuc === true) {
           setGiris(true);
           setDenenme(false);
-          setBaslik("Hoşgeldiniz");
+          setBaslik("Welcome!");
 
           window.location.href = "/admin/anasayfa";
         } else {
           setGiris(false);
-          setButonYazi("Giriş Yap");
+          setButonYazi("Login");
           setDenenme(true);
-          setBaslik("Giriş Yapınız");
+          setBaslik("Login");
         }
       });
   }
@@ -50,14 +50,14 @@ function Giris(props) {
             <input
               autoComplete="off"
               name="username"
-              placeholder="Kullanıcı Adı"
+              placeholder="Username"
               className="form-control w-100 mt-2"
               type="text"
               disabled={girisYapildiMi ? "disabled" : null}
             />
             <input
               name="password"
-              placeholder="Şifre"
+              placeholder="Password"
               className="form-control w-100 mt-2"
               type="password"
               disabled={girisYapildiMi ? "disabled" : null}
@@ -79,7 +79,7 @@ function Giris(props) {
 
           {denendiMi ? (
             <div className="pt-2 text-danger">
-              *Kullanıcı adı ya da şifre hatalı.
+            Username or password is incorrect!
             </div>
           ) : null}
         </div>

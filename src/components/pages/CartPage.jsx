@@ -46,15 +46,15 @@ const CartPage = () => {
                 <table className="table table-borderless table-shopping-cart">
                   <thead className="text-muted">
                     <tr className="small text-uppercase">
-                      <th scope="col">Ürün</th>
+                      <th scope="col">Product</th>
                       <th scope="col" width="120">
-                        Adet
+                        Amount
                       </th>
                       <th scope="col" width="120">
-                        Fiyat
+                        Price
                       </th>
                       <th scope="col" className="text-right" width="200">
-                        İşlem
+                      Process
                       </th>
                     </tr>
                   </thead>
@@ -79,8 +79,7 @@ const CartPage = () => {
 
                 <div className="card-body border-top">
                   <p className="icontext">
-                    <i className="icon text-success fa fa-truck"></i> Ücretsiz
-                    kargo
+                    <i className="icon text-success fa fa-truck"></i> Free shipping
                   </p>
                 </div>
               </div>
@@ -89,7 +88,7 @@ const CartPage = () => {
               <div className="card">
                 <div className="card-body">
                   <dl className="dlist-align">
-                    <dt>Toplam:</dt>
+                    <dt>Total:</dt>
                     <dd className="text-right text-dark b">
                       <strong>₺{toplamTutar.toFixed(2)}</strong>
                     </dd>
@@ -106,7 +105,7 @@ const CartPage = () => {
                       }}
                       className="btn btn-primary btn-block"
                     >
-                      Ödeme Yap
+                      Pay
                     </Link>
                   )}
 
@@ -118,11 +117,11 @@ const CartPage = () => {
                       }}
                       className="btn btn-primary btn-block"
                     >
-                      Ödeme Yap
+                      Pay
                     </Link>
                   )}
                   <a href="#" className="btn btn-light btn-block">
-                    Alışverişe Devam Et
+                  Continue Shopping
                   </a>
                 </div>
               </div>

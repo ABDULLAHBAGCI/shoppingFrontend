@@ -53,18 +53,18 @@ const AdminUserListPage = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-9">
-                <h4 className="page-title">Kullanıcı Listesi</h4>
+                <h4 className="page-title">User List</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Anasayfa</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
                         aria-current="page"
                       >
-                        Tüm Kullanıcılar
+                        All Users
                       </li>
                     </ol>
                   </nav>
@@ -77,7 +77,7 @@ const AdminUserListPage = () => {
                       onChange={kullaniciAra}
                       class="form-control mr-sm-2"
                       type="search"
-                      placeholder="İsim Giriniz"
+                      placeholder="Enter name"
                       aria-label="Search"
                     />
                   </div>
@@ -88,16 +88,16 @@ const AdminUserListPage = () => {
           <div className="row ">
             <main role="main" className="col bg-white mt-3">
               <table class="table">
-                <caption>Kullanıcı Listesi</caption>
+                <caption>User List</caption>
                 <thead>
                   <tr>
                     <th scope="col"></th>
-                    <th scope="col">İsim Soyisim</th>
-                    <th scope="col">Telefon</th>
+                    <th scope="col">Name & Surname</th>
+                    <th scope="col">Phone</th>
                     <th scope="col">E-Mail</th>
-                    <th scope="col">Adres</th>
-                    <th scope="col">Cinsiyet</th>
-                    <th scope="col">İşlem</th>
+                    <th scope="col">Adress</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Process</th>
                   </tr>
                 </thead>
                 <tbody>

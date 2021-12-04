@@ -24,7 +24,7 @@ const Header = () => {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  <i className="fa fa-phone"></i> Phone: +1 201 626 2025
+                  <i className="fa fa-phone"></i>  <a href="https://wa.me/12016262025">Phone: +1 201 626 2025</a>
                 </a>
               </li>
             </ul>
