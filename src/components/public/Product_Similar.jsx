@@ -24,7 +24,7 @@ const Product_Similar = (props) => {
     <React.StrictMode>
       <div className="container">
         <header className="section-heading">
-          <h3>Benzer Ürünler </h3>
+          <h3>Similar Products </h3>
         </header>
 
         <div className="row">

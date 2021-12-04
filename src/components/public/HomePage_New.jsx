@@ -19,7 +19,7 @@ const HomePage_New = () => {
     <section className="section-content">
       <div className="container">
         <header className="section-heading">
-          <h3 className="section-title">Yeni Ürünler</h3>
+          <h3 className="section-title">New Product</h3>
         </header>
 
         <div className="row">

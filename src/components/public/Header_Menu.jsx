@@ -18,7 +18,7 @@ const Header_Menu = () => {
     <ul className="navbar-nav">
       <li className="nav-item">
         <a className="nav-link pl-0" href="/">
-          <strong>Anasayfa</strong>
+          <strong>Home</strong>
         </a>
       </li>
       {kategoriler.map(function (kategori) {

@@ -40,7 +40,7 @@ const Profile_ChangePassword = () => {
     <main className="col-md-9">
       <div className="card">
         <div className="card-body">
-          <h4 className="card-title mb-4">Şifre Değiştir</h4>
+          <h4 className="card-title mb-4">Change Password</h4>
           <form onSubmit={sifreDegistir}>
             <div className="form-row">
               <div className="col form-group">
@@ -48,7 +48,7 @@ const Profile_ChangePassword = () => {
                 <input name="sifre" type="password" className="form-control" />
               </div>
               <div className="col form-group">
-                <label>Şifre Tekrarı</label>
+                <label>Password Repeat</label>
                 <input
                   name="resifre"
                   type="password"

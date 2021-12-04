@@ -49,22 +49,22 @@ const Profile_Information = () => {
     <main className="col-md-9">
       <div className="card">
         <div className="card-body">
-          <h4 className="card-title mb-4">Profil</h4>
+          <h4 className="card-title mb-4">Profile</h4>
           <form onSubmit={bilgileriGonder}>
             <div className="form-row">
               <div className="col form-group">
-                <label>İsim</label>
+                <label>Name</label>
                 <input
-                  name="isim"
+                  name="name"
                   type="text"
                   className="form-control"
                   defaultValue={bilgiler.isim}
                 />
               </div>
               <div className="col form-group">
-                <label>Soyisim</label>
+                <label>Surname</label>
                 <input
-                  name="soyisim"
+                  name="surname"
                   type="text"
                   className="form-control"
                   defaultValue={bilgiler.soyisim}
@@ -84,9 +84,9 @@ const Profile_Information = () => {
                 />
               </div>
               <div className="form-group col-md-6">
-                <label>Telefon</label>
+                <label>Phone</label>
                 <input
-                  name="telefon"
+                  name="phone"
                   type="text"
                   className="form-control"
                   defaultValue={bilgiler.telefon}
@@ -96,9 +96,9 @@ const Profile_Information = () => {
 
             <div className="form-row">
               <div className="form-group col">
-                <label>Adres</label>
+                <label>Adress</label>
                 <input
-                  name="adres"
+                  name="adress"
                   type="text"
                   className="form-control"
                   defaultValue={bilgiler.adres}

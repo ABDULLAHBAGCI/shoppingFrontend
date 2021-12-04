@@ -15,13 +15,13 @@ const Admin_LastOrders = () => {
     <div className="col-lg-6">
       <div className="card">
         <div className="card-body">
-          <h4 className="card-title">Bekleyen Siparişler</h4>
+          <h4 className="card-title">Pending Orders</h4>
 
           <table class="table table">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Tutar</th>
+                <th scope="col">Amount</th>
                 <th scope="col"></th>
               </tr>
             </thead>
@@ -42,7 +42,7 @@ const Admin_LastOrders = () => {
                     </th>
                     <td>{siparis.tutar}</td>
                     <td className="d-flex justify-content-end">
-                      <button className="btn btn-dark">Siparişe Git</button>
+                      <button className="btn btn-dark">Go To Order</button>
                     </td>
                   </tr>
                 );

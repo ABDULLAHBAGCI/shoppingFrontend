@@ -76,7 +76,7 @@ const Product_Comments = () => {
       <div className="row">
         <div className="col">
           <header className="section-heading">
-            <h3>Ürün Yorumları </h3>
+            <h3>Product Reviews </h3>
             <div className="rating-wrap">
               <ul className="rating-stars stars-lg">
                 <li
@@ -98,7 +98,7 @@ const Product_Comments = () => {
                 {(istatistiktik.toplampuan / istatistiktik.yorumsayisi).toFixed(
                   1
                 )}
-                <span className="text-muted"> | {yorumlar.length} yorum</span>
+                <span className="text-muted"> | {yorumlar.length} review</span>
               </strong>
             </div>
           </header>

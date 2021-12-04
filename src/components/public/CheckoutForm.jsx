@@ -141,13 +141,13 @@ export default function CheckoutForm() {
                   : "result-message hidden"
               }
             >
-              <h5>Tebrikler, sipariş oluşturuldu</h5>
+              <h5>Congratulations, the order has been created</h5>
               <div>
-                Takip No : <b>#{takip}</b>
+                Tracking Number : <b>#{takip}</b>
               </div>
-              <div>Lütfen takip numaranızı kaybetmeyiniz.</div>
+              <div>Please do not lose your tracking number.</div>
               <div className="p-2">
-                Alışverişe devam etmek için <a href="/">tıklayın !</a>
+              To continue shopping <a href="/">click here !</a>
               </div>
             </p>
           </form>

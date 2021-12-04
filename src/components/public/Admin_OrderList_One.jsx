@@ -162,19 +162,19 @@ const Admin_OrderList_One = (props) => {
         <div className="col-sm-1">₺{bilgiler.tutar}</div>
         <div className="col-sm-4">{bilgiler.adres}</div>
         <div className="col-sm-2">
-          {bilgiler.sonuc === true && <b className="text-success">Bitti</b>}
+          {bilgiler.sonuc === true && <b className="text-success">Done</b>}
           {dort === true && bilgiler.sonuc === false && (
-            <span className="text-danger">Teslimat Bekleniyor</span>
+            <span className="text-danger">Awaiting Delivery</span>
           )}
           {uc === true && dort === false && bilgiler.sonuc === false && (
-            <span className="text-danger">Kargo Yola Çıktı</span>
+            <span className="text-danger">Cargo is on its way</span>
           )}
 
           {iki === true &&
             uc === false &&
             dort === false &&
             bilgiler.sonuc === false && (
-              <span className="text-danger">Kargoya Verildi</span>
+              <span className="text-danger">Shipped</span>
             )}
 
           {bir === true &&
@@ -182,10 +182,10 @@ const Admin_OrderList_One = (props) => {
             uc === false &&
             dort === false &&
             bilgiler.sonuc === false && (
-              <span className="text-danger">Sipariş Hazırlanıyor</span>
+              <span className="text-danger">Order Preparing</span>
             )}
         </div>
-        <div className="col-sm-1">Aç</div>
+        <div className="col-sm-1">Open</div>
       </div>
       <div>
         <div
@@ -196,27 +196,27 @@ const Admin_OrderList_One = (props) => {
           <article className="card order-group mb-4 bg-light-gray">
             <header className="card-header bg-light-gray">
               <b className="d-inline-block mr-3 bg-light-gray">
-                Takip No : #{bilgiler.takip_no}
+                Tracking Number : #{bilgiler.takip_no}
               </b>
-              <span>Tarih: {bilgiler.tarih}</span>
+              <span>Date: {bilgiler.tarih}</span>
               <button onClick={teslimEt} className="btn btn-light float-right">
-                Teslim Edildi
+              Delivered
               </button>
             </header>
             <div className="card-body">
               <div className="row">
                 <div className="col-md-4">
-                  <h6 className="text-muted">Ödeme</h6>
+                  <h6 className="text-muted">Payment</h6>
                   <p>
                     <span className="text-success">
-                      <i className="fab fa-lg fa-cc-visa"></i>Ödendi
+                      <i className="fab fa-lg fa-cc-visa"></i>Paid
                     </span>
                     <br />
-                    <span className="b">Toplam: ₺{bilgiler.tutar} </span>
+                    <span className="b">Total: ₺{bilgiler.tutar} </span>
                   </p>
                 </div>
                 <div className="col-md-4">
-                  <h6 className="text-muted">İletişim</h6>
+                  <h6 className="text-muted">Contact</h6>
                   <p>
                     {bilgiler.iletisim[0].isim} {bilgiler.iletisim[0].soyisim}
                     <br /> {bilgiler.iletisim[0].telefon} <br />
@@ -224,7 +224,7 @@ const Admin_OrderList_One = (props) => {
                   </p>
                 </div>
                 <div className="col-md-4">
-                  <h6 className="text-muted">Adres</h6>
+                  <h6 className="text-muted">Adress</h6>
                   <p>{bilgiler.adres}</p>
                 </div>
               </div>
@@ -238,7 +238,7 @@ const Admin_OrderList_One = (props) => {
                     defaultChecked={`${bir === true ? true : false}`}
                     checked={bir}
                   />
-                  <span className="text">Sipariş hazırlanıyor</span>
+                  <span className="text">Preparing the Order</span>
                 </div>
 
                 <div className="col-sm-6 col-md-3">
@@ -249,7 +249,7 @@ const Admin_OrderList_One = (props) => {
                     defaultChecked={`${iki === true ? true : false}`}
                     checked={iki}
                   />
-                  <span className="text"> Kargoya verildi</span>
+                  <span className="text"> Shipped</span>
                 </div>
 
                 <div className="col-sm-6 col-md-3">
@@ -260,7 +260,7 @@ const Admin_OrderList_One = (props) => {
                     defaultChecked={`${uc === true ? true : false}`}
                     checked={uc}
                   />
-                  <span className="text"> Kargo yola çıktı </span>
+                  <span className="text"> Cargo is on its way </span>
                 </div>
 
                 <div className="col-sm-6 col-md-3">
@@ -271,7 +271,7 @@ const Admin_OrderList_One = (props) => {
                     defaultChecked={`${dort === true ? true : false}`}
                     checked={dort}
                   />
-                  <span className="text">Teslimat için hazır</span>
+                  <span className="text">Ready for delivery</span>
                 </div>
               </div>
               <hr />

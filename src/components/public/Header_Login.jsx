@@ -38,22 +38,22 @@ const Header_Login = () => {
 
   return (
     <div className="widget-header">
-      <small className="title text-muted">Hoşgeldiniz !</small>
+      <small className="title text-muted">Welcome !</small>
       <div>
         {durum === 2 && (
           <React.StrictMode>
-            <a href="/giris">Giriş Yap</a>
+            <a href="/giris">Login</a>
             <span className="dark-transp"> | </span>
-            <a href="/kayit"> Kayıt Ol</a>
+            <a href="/kayit"> Register</a>
           </React.StrictMode>
         )}
 
         {durum === 1 && (
           <React.StrictMode>
-            <a href="/profilim">Profilim</a>
+            <a href="/profilim">Profile</a>
             <span className="dark-transp"> | </span>
             <a onClick={cikisYap} href="#">
-              Çıkış Yap
+              Logout
             </a>
           </React.StrictMode>
         )}

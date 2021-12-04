@@ -19,7 +19,7 @@ const Product_Comment = (props) => {
             </li>
           </ul>
           <span className="label-rating text-warning">
-            {props.yildiz < 3 ? "Zayıf" : "İyi"}
+            {props.yildiz < 3 ? "Poor" : "Good"}
           </span>
         </div>
       </div>

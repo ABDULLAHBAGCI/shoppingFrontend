@@ -34,22 +34,22 @@ const Admin_Announcement = () => {
     <div className="col-md-4">
       <div className="card">
         <div className="card-body">
-          <h4 className="card-title">Duyurular</h4>
+          <h4 className="card-title">Announcements</h4>
           <div className="feed-widget">
             <ul className="list-style-none feed-body m-0 p-b-20">
               <li className="p-2">
                 <form onSubmit={duyuruEkle}>
                   <div className="row">
                     <input
-                      name="duyuru"
+                      name="announcement"
                       autoComplete="off"
                       type="text"
                       className="form-control col-sm-8 "
-                      placeholder="Duyuru Ekleyin"
+                      placeholder="Add an announcement"
                     />
                     <div className="col-sm-4">
                       <button type="submit" className="ml-1 btn btn-info">
-                        Kaydet
+                        Save
                       </button>
                     </div>
                   </div>

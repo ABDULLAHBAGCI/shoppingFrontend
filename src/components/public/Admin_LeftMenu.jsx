@@ -27,8 +27,8 @@ const Admin_LeftMenu = () => {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <h5 className="m-b-0 user-name font-small">Hamza</h5>
-                    <span className="op-5 user-email">hyilmaz@gmail.com</span>
+                    <h5 className="m-b-0 user-name font-small">Pinar</h5>
+                    <span className="op-5 user-email">pinar@gmail.com</span>
                   </a>
                 </div>
               </div>
@@ -39,7 +39,7 @@ const Admin_LeftMenu = () => {
                 className="btn btn-block create-btn text-white no-block d-flex align-items-center"
               >
                 <i className="fa fa-plus-square"></i>
-                <span className="hide-menu m-l-5 p-2">Ürün Ekle</span>
+                <span className="hide-menu m-l-5 p-2">Add Product</span>
               </a>
             </li>
             <li className="sidebar-item">
@@ -65,7 +65,7 @@ const Admin_LeftMenu = () => {
                 aria-expanded="false"
               >
                 <i className="mdi mdi-account-network"></i>
-                <span className="hide-menu">Ürünler</span>
+                <span className="hide-menu">Products</span>
               </a>
             </li>
             <li className="sidebar-item">
@@ -78,7 +78,7 @@ const Admin_LeftMenu = () => {
                 aria-expanded="false"
               >
                 <i className="mdi mdi-account-network"></i>
-                <span className="hide-menu">Siparişler</span>
+                <span className="hide-menu">Orders</span>
               </a>
             </li>
             <li className="sidebar-item">
@@ -91,7 +91,7 @@ const Admin_LeftMenu = () => {
                 aria-expanded="false"
               >
                 <i className="mdi mdi-border-all"></i>
-                <span className="hide-menu">Kategoriler</span>
+                <span className="hide-menu">Categories</span>
               </a>
             </li>
             <li className="sidebar-item">
@@ -104,7 +104,7 @@ const Admin_LeftMenu = () => {
                 aria-expanded="false"
               >
                 <i className="mdi mdi-face"></i>
-                <span className="hide-menu">Kullanıcılar</span>
+                <span className="hide-menu">Users</span>
               </a>
             </li>
             <li className="sidebar-item">
@@ -117,7 +117,7 @@ const Admin_LeftMenu = () => {
                 aria-expanded="false"
               >
                 <i className="mdi mdi-file"></i>
-                <span className="hide-menu">Yorumlar</span>
+                <span className="hide-menu">Reviews</span>
               </a>
             </li>
           </ul>

@@ -42,9 +42,9 @@ const Admin_LastComments_One = (props) => {
             ${state === 1 && "label-success"} 
             ${state === 2 && "label-danger"}`}
           >
-            {state === 0 && "Onay Bekliyor"}
-            {state === 1 && "Onaylandı"}
-            {state === 2 && "Reddedildi"}
+            {state === 0 && "Waiting for approval"}
+            {state === 1 && "Approved"}
+            {state === 2 && "Denied"}
           </span>
           <span className="action-icons ml-3">
             <button className="btn" onClick={yorumOnayla}>

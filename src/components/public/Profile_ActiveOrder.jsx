@@ -13,25 +13,7 @@ const Profile_ActiveOrder = () => {
       durum: [],
     },
   ]);
-  /*
-  durum: []
-  kullanici_id: "603abd0cfc207810b8fc2d39"
-  odeme_id: "pi_1IRNbfEKIejjwtwZVcNDs0Ug_secret_r1Vpi7UC0BH6yvYf2H9Bwd8Sr"
-  sonuc: false
-  takip_no: "202134-48978"
-  tarih: "2021-03-04T20:17:09.686Z"
-  tutar: 199.95
-  urunler: (2) [{…}, {…}]
-  _id: "6041404574032716486c3196",
 
-  iletisim : [{
-    isim : "Hamza Yılmaz",
-    telefon : "0539 999 99 99",
-    email : "hyilmaz.techproed@gmail.com",
-  }],
-  adres : "Adres Bilgisi"
-
-  */
   function bilgileriAl() {
     axios
       .get("http://localhost:5000/api/profil/aktifsiparis", {
@@ -51,26 +33,26 @@ const Profile_ActiveOrder = () => {
           <article className="card order-group mb-4">
             <header className="card-header">
               <b className="d-inline-block mr-3">
-                Takip No : #{siparis.takip_no}
+              Tracking Number : #{siparis.takip_no}
               </b>
-              <span>Tarih: {siparis.tarih}</span>
+              <span>Date: {siparis.tarih}</span>
             </header>
             <div className="card-body">
               <div className="row">
                 <div className="col-md-4">
-                  <h6 className="text-muted">Ödeme</h6>
+                  <h6 className="text-muted">Payment</h6>
 
                   <p>
                     <span class="text-success">
                       <i class="fab fa-lg fa-cc-visa"></i>
-                      Ödendi
+                      Paid
                     </span>
                     <br />
-                    <span className="b">Toplam: ₺{siparis.tutar} </span>
+                    <span className="b">Total: ₺{siparis.tutar} </span>
                   </p>
                 </div>
                 <div className="col-md-4">
-                  <h6 className="text-muted">İletişim</h6>
+                  <h6 className="text-muted">Contact</h6>
                   <p>
                     {siparis.iletisim[0].isim} {siparis.iletisim[0].soyisim}{" "}
                     <br /> {siparis.iletisim[0].telefon} <br />{" "}
@@ -78,7 +60,7 @@ const Profile_ActiveOrder = () => {
                   </p>
                 </div>
                 <div className="col-md-4">
-                  <h6 className="text-muted">Adres</h6>
+                  <h6 className="text-muted">Adress</h6>
                   <p> {siparis.adres} </p>
                 </div>
               </div>
@@ -89,25 +71,25 @@ const Profile_ActiveOrder = () => {
                   <span className="icon">
                     <i className="fa fa-check"></i>
                   </span>
-                  <span className="text">Sipariş hazırlanıyor</span>
+                  <span className="text">Preparing the order</span>
                 </div>
                 <div className={`step ${siparis.durum.length > 1 && "active"}`}>
                   <span className="icon">
                     <i className="fa fa-user"></i>
                   </span>
-                  <span className="text"> Kargoya verildi</span>
+                  <span className="text"> Shipped</span>
                 </div>
                 <div className={`step ${siparis.durum.length > 2 && "active"}`}>
                   <span className="icon">
                     <i className="fa fa-truck"></i>
                   </span>
-                  <span className="text"> Kargo yola çıktı </span>
+                  <span className="text"> Cargo is on its way </span>
                 </div>
                 <div className={`step ${siparis.durum.length > 3 && "active"}`}>
                   <span className="icon">
                     <i className="fa fa-box"></i>
                   </span>
-                  <span className="text">Teslimat için hazır</span>
+                  <span className="text">Ready for Delivery</span>
                 </div>
               </div>
               <hr />

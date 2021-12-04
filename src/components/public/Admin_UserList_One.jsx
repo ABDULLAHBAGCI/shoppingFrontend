@@ -40,13 +40,13 @@ const Admin_UserList_One = (props) => {
       <td>
         {engel === 0 && (
           <button onClick={engelle} className="btn btn-info">
-            Engelle
+          Block
           </button>
         )}
 
         {engel === 1 && (
           <button onClick={engeliKaldir} className="btn btn-success">
-            Engeli Kaldır
+          Unblock
           </button>
         )}
       </td>

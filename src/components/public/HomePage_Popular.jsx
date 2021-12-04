@@ -20,7 +20,7 @@ const HomePage_Popular = () => {
     <section className="section-content">
       <div className="container">
         <header className="section-heading">
-          <h3 className="section-title">Populer Ürünler</h3>
+          <h3 className="section-title">Popular Product</h3>
         </header>
 
         <div className="row">

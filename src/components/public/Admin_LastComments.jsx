@@ -19,7 +19,7 @@ const Admin_LastComments = () => {
     <div className="col-lg-6">
       <div className="card">
         <div className="card-body">
-          <h4 className="card-title">Son Yorumlar</h4>
+          <h4 className="card-title">Last Comments</h4>
         </div>
         <div className="comment-widgets scrollable">
           {yorumlar.map(function (yorum) {

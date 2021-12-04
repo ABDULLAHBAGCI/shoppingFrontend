@@ -152,7 +152,7 @@ const CartPage_Product = (props) => {
               {props.isim}
             </a>
             <p className="text-muted small">
-              Beden : {props.size} <br /> Adet: {miktar}
+              Seize : {props.size} <br /> Number: {miktar}
             </p>
           </figcaption>
         </figure>
@@ -190,7 +190,7 @@ const CartPage_Product = (props) => {
       </td>
       <td className="text-right">
         <button onClick={sepettenKaldir} className="btn btn-light">
-          Çıkar
+          Remove
         </button>
       </td>
     </tr>

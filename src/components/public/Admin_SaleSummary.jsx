@@ -78,8 +78,8 @@ const Admin_SaleSummary = () => {
         <div className="card-body">
           <div className="d-md-flex align-items-center">
             <div>
-              <h5 className="card-title">Satış Özeti</h5>
-              <h6 className="card-subtitle">Bu ayki satış özetiniz</h6>
+              <h5 className="card-title">Sales Summary</h5>
+              <h6 className="card-subtitle">Your sales summary for this month</h6>
             </div>
           </div>
           <div className="row">

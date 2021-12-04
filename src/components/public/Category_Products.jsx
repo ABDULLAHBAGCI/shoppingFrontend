@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import Product_Card from "./Product_Card";
 import { useLocation, useParams } from "react-router-dom";
@@ -112,15 +113,15 @@ const Category_Products = () => {
     <main className="col-md-9">
       <header className="border-bottom mb-4 pb-3">
         <div className="form-inline">
-          <span className="mr-md-auto">{urunSayisi} tane ürün bulundu.</span>
+          <span className="mr-md-auto">{urunSayisi} product found.</span>
           <select
             defaultValue={yaziliSecim}
             onChange={siralamaSecildi}
             className="mr-2 form-control"
           >
-            <option>Yeni ürünler</option>
-            <option>Çok satanlar</option>
-            <option>En düşük fiyat</option>
+            <option>New Products</option>
+            <option>Bestsellers</option>
+            <option>Lowest price</option>
           </select>
           <div className="btn-group">
             <a
@@ -169,7 +170,7 @@ const Category_Products = () => {
               className="page-link"
               href={`?sayfa=1&secim=${secim}&marka=${marka}&min=${min}&max=${max}`}
             >
-              İlk Sayfa
+              First Page
             </a>
           </li>
 
@@ -250,7 +251,7 @@ const Category_Products = () => {
                 parseInt(urunSayisi / 6) + 1
               }&secim=${secim}&marka=${marka}&min=${min}&max=${max}`}
             >
-              Son Sayfa
+              Last Page
             </a>
           </li>
         </ul>

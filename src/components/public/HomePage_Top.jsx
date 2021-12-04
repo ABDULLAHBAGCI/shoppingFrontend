@@ -10,10 +10,9 @@ const HomePage_Top = () => {
               <div className="col-lg-5 col-md-5 col-sm-12 col-12">
                 <div className="shadow-sm card-banner">
                   <div className="p-4" style={{ width: "75%" }}>
-                    <h5 className="card-title">Altınyıldz Gömlekler</h5>
+                    <h5 className="card-title">Levi's Shirt</h5>
                     <p>
-                      2021 Model altınyıldız marka gömleklerdeki indirimi
-                      kaçırmayın.
+                    Don't miss the discount on 2021 Model Levi's brand shirts.
                     </p>
                   </div>
                   <img
@@ -25,10 +24,9 @@ const HomePage_Top = () => {
                 </div>
                 <div className="shadow-sm card-banner mt-2">
                   <div className="p-4" style={{ width: "70%" }}>
-                    <h5 className="card-title">Sezon Sonu İndirimi</h5>
+                    <h5 className="card-title">End of Season Sale</h5>
                     <p>
-                      Yaz mevsiminin gelmesiyle, montlarda %70'e varan
-                      indirimler var.
+                    With the arrival of summer, there are discounts up to 70% on coats.
                     </p>
                   </div>
                   <img
@@ -41,10 +39,9 @@ const HomePage_Top = () => {
 
                 <div className="shadow-sm card-banner  mt-2">
                   <div className="p-4" style={{ width: "75%" }}>
-                    <h5 className="card-title">Yeni Sezon Ürünler</h5>
+                    <h5 className="card-title">New Season Products</h5>
                     <p>
-                      2021'in modasına uygun yeni sezon pantolonlara baktınız mı
-                      ?
+                      Have you looked at the new season trousers suitable for 2021's fashion?
                     </p>
                   </div>
                   <img
@@ -80,7 +77,7 @@ const HomePage_Top = () => {
                     <div className="carousel-item active">
                       <img
                         className="d-block w-100"
-                        src="images/banners/slide1.jpg"
+                        src="https://images.pexels.com/photos/10040256/pexels-photo-10040256.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                         alt="First slide"
                         alt=""
                       />
@@ -88,7 +85,7 @@ const HomePage_Top = () => {
                     <div className="carousel-item">
                       <img
                         className="d-block w-100"
-                        src="images/banners/slide2.jpg"
+                        src="https://images.pexels.com/photos/10375856/pexels-photo-10375856.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                         alt="Second slide"
                         alt=""
                       />
@@ -96,7 +93,7 @@ const HomePage_Top = () => {
                     <div className="carousel-item">
                       <img
                         className="d-block w-100"
-                        src="images/banners/slide3.jpg"
+                        src="https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                         alt="Third slide"
                         alt=""
                       />
@@ -146,15 +143,13 @@ const HomePage_Top = () => {
               >
                 <div className="card-img-overlay white">
                   <h3 className="card-title">
-                    Tüm kışlık kıyafetleriniz <br /> hazır mı ?
+                  Are all your winter clothes <br /> ready ?
                   </h3>
                   <p className="card-text" style={{ maxWidth: "400px" }}>
-                    Mont çeşitlerinden berelere, eldivenlerden kazaklara kadar
-                    aradığınız tüm kışlık kıyafetler %50'ye varan indirimlerle
-                    sizi bekliyor.
+                  All the winter clothes you are looking for, from coats to berets, from gloves to sweaters, are waiting for you with discounts of up to 50%.
                   </p>
                   <a href="" className="btn btn-warning">
-                    Hemen İncele
+                  Review Now
                   </a>
                 </div>
               </div>
@@ -170,10 +165,9 @@ const HomePage_Top = () => {
                 }}
               >
                 <div className="card-img-overlay text-white">
-                  <h5 className="card-title">En Güzel Montlar </h5>
+                  <h5 className="card-title">The Most Beautiful Coats </h5>
                   <p className="card-text">
-                    Çocuklarınız için birbirinden sevimli ve güzel mont
-                    çeşitleri sizi bekliyor.
+                  A variety of cute and beautiful coats await you for your children.
                   </p>
                 </div>
               </div>
@@ -194,10 +188,9 @@ const HomePage_Top = () => {
                     </span>
                   </div>
                   <figcaption className="info">
-                    <h5 className="title">Uygun Fiyatlar</h5>
+                    <h5 className="title">Affordable Prices</h5>
                     <p>
-                      Cep yakmayan uygun fiyatlarda dört mevsim kıyafet
-                      ihtiyacınızı karşılayın.
+                    Meet your four-season clothing needs at affordable prices that don't burn pockets.
                     </p>
                   </figcaption>
                 </figure>
@@ -212,9 +205,9 @@ const HomePage_Top = () => {
                     </span>
                   </div>
                   <figcaption className="info">
-                    <h5 className="title">7/24 İletişim</h5>
+                    <h5 className="title">24/7 Communication</h5>
                     <p>
-                      Müşteri hizmetlerimize istediğiniz zaman ulaşabilirsiniz.
+                    You can reach our customer service at any time.
                     </p>
                   </figcaption>
                 </figure>
@@ -229,8 +222,8 @@ const HomePage_Top = () => {
                     </span>
                   </div>
                   <figcaption className="info">
-                    <h5 className="title">Hızlı Teslimat</h5>
-                    <p>Satın aldığınız ürünler aynı gün kargoya verilir.</p>
+                    <h5 className="title">Fast Delivery</h5>
+                    <p>The products you buy are shipped the same day.</p>
                   </figcaption>
                 </figure>
               </article>

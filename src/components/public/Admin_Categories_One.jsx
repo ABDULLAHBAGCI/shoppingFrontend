@@ -50,7 +50,7 @@ const Admin_Categories_One = (props) => {
         </div>
         <div className="col-sm-2">{props.url}</div>
         <div className="col-sm-7">{props.aciklama}</div>
-        <div className="col-sm-1">Aç</div>
+        <div className="col-sm-1">Open</div>
       </div>
       <div>
         <div
@@ -58,7 +58,7 @@ const Admin_Categories_One = (props) => {
             durum === false && "d-none"
           }`}
         >
-          Kategoriyi Düzenle
+          Edit Category
           <div className="form-row mt-2">
             <div className="form-group col-md-6">
               <input
@@ -67,8 +67,8 @@ const Admin_Categories_One = (props) => {
                 type="text"
                 className="form-control"
                 id="inputEmail4"
-                name="isim"
-                placeholder="İsim giriniz"
+                name="name"
+                placeholder="Enter name"
               />
             </div>
             <div className="form-group col-md-6">
@@ -79,7 +79,7 @@ const Admin_Categories_One = (props) => {
                 className="form-control"
                 id="inputPassword4"
                 name="url"
-                placeholder="URL giriniz"
+                placeholder="Enter URL"
               />
             </div>
           </div>
@@ -91,7 +91,7 @@ const Admin_Categories_One = (props) => {
                 className="form-control"
                 id="inputAddress"
                 name="aciklama"
-                placeholder="Açıklama giriniz"
+                placeholder="Enter description"
                 onChange={aciklamaDegisti}
               />
             </div>
@@ -102,7 +102,7 @@ const Admin_Categories_One = (props) => {
                 type="submit"
                 className="btn btn-primary"
               >
-                Kaydet
+                Save
               </button>
             </div>
             <div className="form-group col-md-1 d-flex align-items-end justify-content-start">
@@ -111,7 +111,7 @@ const Admin_Categories_One = (props) => {
                 type="submit"
                 className="btn btn-danger"
               >
-                Sil
+                Delete
               </button>
             </div>
           </div>

@@ -80,7 +80,7 @@ const Admin_Header = () => {
               <div className="dropdown-menu dropdown-menu-right user-dd animated">
                 <button onClick={cikisYap} className="dropdown-item">
                   <i className="ti-user m-r-5 m-l-5"></i>
-                  Çıkış Yap
+                  Logout
                 </button>
               </div>
             </li>

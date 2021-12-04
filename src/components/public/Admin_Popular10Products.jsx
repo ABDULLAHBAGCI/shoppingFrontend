@@ -44,9 +44,9 @@ const Admin_Popular10Products = () => {
           <div className="card-body">
             <div className="d-md-flex align-items-center">
               <div>
-                <h5 className="card-title">En Çok Satan 10 Ürün</h5>
+                <h5 className="card-title">Top 10 Products</h5>
                 <h6 className="card-subtitle">
-                  Çok satan ürünleri görüntüleyebilirsiniz
+                You can view the best selling products
                 </h6>
               </div>
             </div>
@@ -55,14 +55,14 @@ const Admin_Popular10Products = () => {
             <table className="table v-middle">
               <thead>
                 <tr className="bg-light">
-                  <th className="border-top-0">Ürün</th>
-                  <th className="border-top-0">Kategori</th>
-                  <th className="border-top-0">Marka</th>
-                  <th className="border-top-0">İnd. Fiyat</th>
-                  <th className="border-top-0">Nor. Fiyat</th>
-                  <th className="border-top-0">S. Sayı</th>
-                  <th className="border-top-0">Sil</th>
-                  <th className="border-top-0">Düzenle</th>
+                  <th className="border-top-0">Product</th>
+                  <th className="border-top-0">Category</th>
+                  <th className="border-top-0">Brand</th>
+                  <th className="border-top-0">Discounted Price</th>
+                  <th className="border-top-0">Normal Price</th>
+                  <th className="border-top-0">Number of Stocks</th>
+                  <th className="border-top-0">Delete</th>
+                  <th className="border-top-0">Edit</th>
                 </tr>
               </thead>
               <tbody>
@@ -89,7 +89,7 @@ const Admin_Popular10Products = () => {
                           onClick={(e) => {
                             if (
                               window.confirm(
-                                "Silmek istediğinizden emin misiniz ?"
+                                "Are you sure you want to delete ?"
                               )
                             ) {
                               urunSil(e);
@@ -100,7 +100,7 @@ const Admin_Popular10Products = () => {
                         </button>
                       </td>
                       <td>
-                        <button className="btn btn-secondary">Düzenle</button>
+                        <button className="btn btn-secondary">Edit</button>
                       </td>
                     </tr>
                   );

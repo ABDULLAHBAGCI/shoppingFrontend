@@ -8,7 +8,7 @@ const Header_Search = () => {
           type="text"
           className="form-control"
           style={{ width: "60%" }}
-          placeholder="Ürün ismi giriniz"
+          placeholder="Enter product name"
         />
 
         <div className="input-group-append">

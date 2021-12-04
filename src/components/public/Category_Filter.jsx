@@ -91,7 +91,7 @@ const Category_Filter = () => {
                 className=""
               >
                 <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">Markalar </h6>
+                <h6 className="title">Brands </h6>
               </a>
             </header>
             <div className="filter-content collapse show" id="collapse_2">
@@ -125,7 +125,7 @@ const Category_Filter = () => {
                 className=""
               >
                 <i className="icon-control fa fa-chevron-down"></i>
-                <h6 className="title">Fiyat Aralığı</h6>
+                <h6 className="title">Price Range</h6>
               </a>
             </header>
             <div className="filter-content collapse show" id="collapse_3">
@@ -153,7 +153,7 @@ const Category_Filter = () => {
                   </div>
                 </div>
                 <button type="submit" className="btn btn-block btn-primary">
-                  Uygula
+                Apply
                 </button>
               </div>
             </div>

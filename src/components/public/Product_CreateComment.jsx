@@ -38,12 +38,12 @@ const Product_CreateComment = (props) => {
   return (
     <React.StrictMode>
       <form onSubmit={yorumEkle} className="bg-light p-2 rounded mb-2">
-        <div className="pb-2 pr-2">Yorum Yap</div>
+        <div className="pb-2 pr-2">Make a Comment</div>
         <div className="form-group">
           <div className="row">
             <div className="col-sm-10">
               <textarea
-                placeholder="Yorumunuzu buraya girebilirsiniz"
+                placeholder="You can enter your comment here"
                 rows="1"
                 name="yorum"
                 className="form-control"
@@ -54,12 +54,12 @@ const Product_CreateComment = (props) => {
             <div className="col-sm-1">
               <div class="btn-group">
                 <select name="yildiz" class="custom-select" required>
-                  <option value="1">1 Puan</option>
-                  <option value="2">2 Puan</option>
-                  <option value="3">3 Puan</option>
-                  <option value="4">4 Puan</option>
+                  <option value="1">1 Point</option>
+                  <option value="2">2 Point</option>
+                  <option value="3">3 Point</option>
+                  <option value="4">4 Point</option>
                   <option value="5" selected>
-                    5 Puan
+                    5 Point
                   </option>
                 </select>
               </div>
@@ -70,12 +70,12 @@ const Product_CreateComment = (props) => {
                 class="btn btn-warning"
                 disabled={`${durum === 1 ? "disabled" : ""}`}
               >
-                Gönder
+                Send
               </button>
             </div>
           </div>
         </div>
-        {durum === 2 && <small className="pl-2">Yorumunuz onay bekliyor</small>}
+        {durum === 2 && <small className="pl-2">Your comment is awaiting moderation</small>}
       </form>
     </React.StrictMode>
   );

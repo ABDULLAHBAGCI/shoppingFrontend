@@ -27,7 +27,7 @@ const Category_Info = () => {
         <nav>
           <ol className="breadcrumb text-white">
             <li className="breadcrumb-item">
-              <a href="/">Anasayfa</a>
+              <a href="/">Home</a>
             </li>
             <li className="breadcrumb-item text-dark">{kategoriIsim}</li>
           </ol>

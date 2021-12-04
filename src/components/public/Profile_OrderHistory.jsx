@@ -33,10 +33,10 @@ const Profile_OrderHistory = () => {
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Takip No</th>
-              <th scope="col">Tarih</th>
-              <th scope="col">Tutar</th>
-              <th scope="col">Sonuç</th>
+              <th scope="col">Tracking Number</th>
+              <th scope="col">Date</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Total</th>
             </tr>
           </thead>
           <tbody>
@@ -49,9 +49,9 @@ const Profile_OrderHistory = () => {
                   <td>₺{siparis.tutar}</td>
                   <td>
                     {siparis.sonuc === true ? (
-                      <b className="text-success">Teslim Edildi ✓</b>
+                      <b className="text-success">Delivered ✓</b>
                     ) : (
-                      <b className="text-danger">Teslim edilmedi ✖</b>
+                      <b className="text-danger">Not delivered ✖</b>
                     )}
                   </td>
                 </tr>

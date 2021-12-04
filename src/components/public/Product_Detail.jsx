@@ -163,20 +163,20 @@ const Product_Detail = () => {
                   <p>{detay.aciklama}</p>
 
                   <dl className="row">
-                    <dt className="col-sm-3">Marka</dt>
+                    <dt className="col-sm-3">Brand</dt>
                     <dd className="col-sm-9">{detay.marka}</dd>
 
-                    <dt className="col-sm-3">Renk</dt>
+                    <dt className="col-sm-3">Color</dt>
                     <dd className="col-sm-9">{detay.renk}</dd>
 
-                    <dt className="col-sm-3">Cinsiyet</dt>
+                    <dt className="col-sm-3">Gender</dt>
                     <dd className="col-sm-9">{detay.cinsiyet}</dd>
                   </dl>
 
                   <hr />
                   <div className="row">
                     <div className="form-group col-md flex-grow-0">
-                      <label>Miktar</label>
+                      <label>Quantity</label>
                       <div className="input-group mb-3 input-spinner">
                         <div className="input-group-prepend">
                           <button
@@ -259,7 +259,7 @@ const Product_Detail = () => {
                       stokDurumu === false && "disabled"
                     }`}
                   >
-                    Hemen Satın Al
+                    Buy Now
                   </button>
                   <button
                     onClick={sepeteEkle}

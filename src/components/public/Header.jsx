@@ -24,20 +24,20 @@ const Header = () => {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  <i className="fa fa-phone"></i> Telefon: 0212 444 00 11
+                  <i className="fa fa-phone"></i> Phone: +1 201 626 2025
                 </a>
               </li>
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a href="#" className="nav-link">
-                  Hesabım
+                  Account
                 </a>
               </li>
 
               <li className="nav-item">
                 <a href="#" className="nav-link">
-                  Ödeme Sayfası
+                  Payment Page
                 </a>
               </li>
             </ul>
