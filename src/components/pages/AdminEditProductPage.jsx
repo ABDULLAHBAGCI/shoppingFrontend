@@ -50,7 +50,7 @@ const AdminEditProductPage = () => {
       "kategori",
       event.target.kategori[event.target.kategori.selectedIndex].textContent
     );
-    formData.append("kategori_url", event.target.kategori.value);
+    formData.append("category_url", event.target.kategori.value);
     formData.append("marka", event.target.marka.value);
     formData.append("renk", event.target.renk.value);
     formData.append("cinsiyet", event.target.cinsiyet.value);
@@ -177,7 +177,7 @@ const AdminEditProductPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Home</a>
+                        <a href="/admin/home">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -206,7 +206,7 @@ const AdminEditProductPage = () => {
                             className="form-control"
                             type="text"
                             name="isim"
-                            placeholder="Başlık"
+                            placeholder="Title"
                           />
                         </div>
                       </div>
@@ -215,14 +215,14 @@ const AdminEditProductPage = () => {
                           <div className="bg-light p-2 rounded  d-flex align-items-center ">
                             <span class="w-25">Category</span>
                             <select
-                              name="category"
+                              name="kategori"
                               class=" w-75 float-right rounded border-light"
                             >
                               {kategori !== undefined &&
                                 kategoriler.map(function (bakilan) {
                                   return (
                                     <option
-                                      value={bakilan.kategori_url}
+                                      value={bakilan.category_url}
                                       selected={
                                         kategori === bakilan.kategori_isim
                                           ? "selected"
@@ -241,12 +241,12 @@ const AdminEditProductPage = () => {
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Men"
+                                value="Erkek"
                                 type="radio"
                                 id="customRadioInline1"
-                                name="gender"
+                                name="cinsiyet"
                                 class="custom-control-input"
-                                checked={cinsiyet === "Men" ? true : false}
+                                checked={cinsiyet === "Erkek" ? true : false}
                                 onChange={cinsiyetDegistir}
                               />
                               <label
@@ -259,12 +259,12 @@ const AdminEditProductPage = () => {
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Women"
+                                value="Kadın"
                                 type="radio"
                                 id="customRadioInline2"
-                                name="gender"
+                                name="cinsiyet"
                                 class="custom-control-input"
-                                checked={cinsiyet === "Women" ? true : false}
+                                checked={cinsiyet === "Kadın" ? true : false}
                                 onChange={cinsiyetDegistir}
                               />
                               <label
@@ -284,7 +284,7 @@ const AdminEditProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="Discounted_price"
+                            name="ind_fiyat"
                             placeholder="Discounted price"
                             defaultValue={ind_fiyat}
                           />
@@ -295,8 +295,8 @@ const AdminEditProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="normal_price"
-                            placeholder="Normal Price"
+                            name="normal_fiyat"
+                            placeholder="Normal price"
                             defaultValue={normal_fiyat}
                           />
                         </div>
@@ -308,7 +308,7 @@ const AdminEditProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="brand"
+                            name="marka"
                             placeholder="Brand"
                             defaultValue={marka}
                           />
@@ -318,7 +318,7 @@ const AdminEditProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="color"
+                            name="renk"
                             placeholder="Color"
                             defaultValue={renk}
                           />
@@ -328,12 +328,12 @@ const AdminEditProductPage = () => {
                         placeholder="Description"
                         required
                         className="form-control mb-2"
-                        name="description"
+                        name="aciklama"
                         rows="3"
                         defaultValue={aciklama}
                       ></textarea>
 
-                      <div className="pt-1 pb-0">Enter Number of Stocks</div>
+                      <div className="pt-1 pb-0">Enter Stock Amount</div>
                       <hr className="p-0 mt-2" />
                       <div className="row">
                         <div className="col-md-6 col-lg-3 col-sm-12">
@@ -348,7 +348,7 @@ const AdminEditProductPage = () => {
                               name="s"
                               type="number"
                               class="form-control"
-                              placeholder="Please enter quantity"
+                              placeholder="Enter Amount"
                               aria-describedby="basic-addon1"
                               defaultValue={s}
                             />
@@ -366,7 +366,7 @@ const AdminEditProductPage = () => {
                               name="m"
                               type="number"
                               class="form-control"
-                              placeholder="Please enter quantity"
+                              placeholder="Enter Amount"
                               aria-describedby="basic-addon1"
                               defaultValue={m}
                             />
@@ -384,7 +384,7 @@ const AdminEditProductPage = () => {
                               name="l"
                               type="number"
                               class="form-control"
-                              placeholder="Please enter quantity"
+                              placeholder="Enter Amount"
                               aria-describedby="basic-addon1"
                               defaultValue={l}
                             />
@@ -402,7 +402,7 @@ const AdminEditProductPage = () => {
                               name="xl"
                               type="number"
                               class="form-control"
-                              placeholder="Please enter quantity"
+                              placeholder="Enter Amount"
                               aria-describedby="basic-addon1"
                               defaultValue={xl}
                             />

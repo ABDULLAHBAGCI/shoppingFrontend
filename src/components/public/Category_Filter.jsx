@@ -39,7 +39,7 @@ const Category_Filter = () => {
   function filtreyiUygula(event) {
     var adres =
       "http://localhost:3000/kategori/" +
-      parametreler.kategori_url +
+      parametreler.category_url +
       "?sayfa=1" +
       "&secim=" +
       secim +
@@ -69,7 +69,7 @@ const Category_Filter = () => {
     axios
       .get(
         "http://localhost:5000/api/kategori/filtre/marka/" +
-          parametreler.kategori_url
+          parametreler.category_url
       )
       .then(function (gelenVeri) {
         setVTMarkalar(gelenVeri.data);

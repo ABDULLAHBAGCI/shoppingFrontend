@@ -13,7 +13,7 @@ const Header_Card = () => {
   }
 
   return (
-    <a href="/sepetim" className="widget-header pl-3 ml-3">
+    <a href="/basket" className="widget-header pl-3 ml-3">
       <div className="icon icon-sm rounded-circle border">
         <i className="fa fa-shopping-cart"></i>
       </div>

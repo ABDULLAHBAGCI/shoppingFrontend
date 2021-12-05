@@ -4,14 +4,14 @@ import React, { useEffect } from "react";
 const Admin_Header = () => {
   async function girisKontrol() {
     await axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("http://localhost:5000/api/kullanici/loginkontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
         if (gelenVeri.data.sonuc === true && gelenVeri.data.rol === "admin") {
           // işleme gerek yok.
         } else {
-          window.location.href = "/admin/giris";
+          window.location.href = "/admin/login";
         }
       });
   }
@@ -24,7 +24,7 @@ const Admin_Header = () => {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
-        window.location.href = "/admin/giris";
+        window.location.href = "/admin/login";
       });
   }
 
@@ -32,7 +32,7 @@ const Admin_Header = () => {
     <header className="topbar" data-navbarbg="skin5">
       <nav className="navbar top-navbar navbar-expand-md navbar-dark">
         <div className="navbar-header" data-logobg="skin5">
-          <a className="navbar-brand" href="/admin/anasayfa">
+          <a className="navbar-brand" href="/admin/home">
             <b className="logo-icon">
               <img
                 src="../../assets/images/logo-light-icon.png"

@@ -25,7 +25,7 @@ const Product_Comments = () => {
 
   function girisKontrol() {
     axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("http://localhost:5000/api/kullanici/loginkontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

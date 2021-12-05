@@ -58,7 +58,7 @@ const AdminUserListPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Home</a>
+                        <a href="/admin/home">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -97,7 +97,7 @@ const AdminUserListPage = () => {
                     <th scope="col">E-Mail</th>
                     <th scope="col">Adress</th>
                     <th scope="col">Gender</th>
-                    <th scope="col">Process</th>
+                    <th scope="col">Transaction</th>
                   </tr>
                 </thead>
                 <tbody>

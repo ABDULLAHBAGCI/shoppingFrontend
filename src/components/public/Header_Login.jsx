@@ -11,7 +11,7 @@ const Header_Login = () => {
 
   function girisKontrol() {
     axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("http://localhost:5000/api/kullanici/loginkontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
@@ -42,15 +42,15 @@ const Header_Login = () => {
       <div>
         {durum === 2 && (
           <React.StrictMode>
-            <a href="/giris">Login</a>
+            <a href="/login">Login</a>
             <span className="dark-transp"> | </span>
-            <a href="/kayit"> Register</a>
+            <a href="/register"> Register</a>
           </React.StrictMode>
         )}
 
         {durum === 1 && (
           <React.StrictMode>
-            <a href="/profilim">Profile</a>
+            <a href="/profile">Profile</a>
             <span className="dark-transp"> | </span>
             <a onClick={cikisYap} href="#">
               Logout

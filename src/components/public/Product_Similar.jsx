@@ -6,10 +6,10 @@ const Product_Similar = (props) => {
   const [urunler, setUrunler] = useState([]);
 
   function urunleriAl() {
-    if (props.kategori_url !== undefined) {
+    if (props.category_url !== undefined) {
       var adres =
         "http://localhost:5000/api/urun/benzerurunler/" +
-        props.kategori_url +
+        props.category_url +
         "/" +
         props.id;
       axios.get(adres).then(function (gelenVeri) {
@@ -18,7 +18,7 @@ const Product_Similar = (props) => {
     }
   }
 
-  useEffect(urunleriAl, [props.kategori_url !== undefined]);
+  useEffect(urunleriAl, [props.category_url !== undefined]);
 
   return (
     <React.StrictMode>

@@ -43,12 +43,12 @@ const AdminCommentList = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-9">
-                <h4 className="page-title">Comment List</h4>
+                <h4 className="page-title">Comment Lists</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Home</a>
+                        <a href="/admin/home">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -96,7 +96,7 @@ const AdminCommentList = () => {
                     className={`page-link`}
                     href={`?sayfa=${parseInt(sayfa) - 1}`}
                   >
-                    Previous page
+                    Previous Page
                   </a>
                 ) : (
                   <span className=" disabled"></span>
@@ -105,7 +105,7 @@ const AdminCommentList = () => {
 
               <div>
                 <a className="page-link" href={`?sayfa=${parseInt(sayfa) + 1}`}>
-                Next page
+                  Next Page
                 </a>
               </div>
             </div>

@@ -12,7 +12,7 @@ const CartPage = () => {
 
   function girisKontrol() {
     axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("http://localhost:5000/api/kullanici/loginkontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
@@ -54,7 +54,7 @@ const CartPage = () => {
                         Price
                       </th>
                       <th scope="col" className="text-right" width="200">
-                      Process
+                        Process
                       </th>
                     </tr>
                   </thead>
@@ -79,7 +79,7 @@ const CartPage = () => {
 
                 <div className="card-body border-top">
                   <p className="icontext">
-                    <i className="icon text-success fa fa-truck"></i> Free shipping
+                    <i className="icon text-success fa fa-truck"></i> Free Shipping
                   </p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const CartPage = () => {
                   {girisYapildiMi === true && (
                     <Link
                       to={{
-                        pathname: "/kargo-bilgileri",
+                        pathname: "/cargo-information",
                         state: cookies.sepet,
                       }}
                       className="btn btn-primary btn-block"
@@ -112,7 +112,7 @@ const CartPage = () => {
                   {girisYapildiMi === false && (
                     <Link
                       to={{
-                        pathname: "/giris",
+                        pathname: "/login",
                         state: { odemeSayfasinaYonlendirilecekMi: true },
                       }}
                       className="btn btn-primary btn-block"
@@ -121,7 +121,7 @@ const CartPage = () => {
                     </Link>
                   )}
                   <a href="#" className="btn btn-light btn-block">
-                  Continue Shopping
+                    Countinue shopping
                   </a>
                 </div>
               </div>
