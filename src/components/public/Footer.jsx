@@ -209,9 +209,9 @@ const Footer = () => {
               <span className="px-2"><a href="https://goo.gl/maps/572SMPiYtjaVfGqm6">100 14th St, Jersey City, NJ 07310, United States</a></span>
             </div>
             <div className="col-md-2 text-md-right text-muted">
-              <i className="fab fa-lg fa-cc-visa"></i>
-              <i className="fab fa-lg fa-cc-paypal"></i>
-              <i className="fab fa-lg fa-cc-mastercard"></i>
+              <i className="fab fa-3x fa-cc-visa"></i>
+              <i className="fab fa-3x fa-cc-paypal"></i>
+              <i className="fab fa-3x fa-cc-mastercard"></i>
             </div>
           </section>
         </div>
