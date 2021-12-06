@@ -41,7 +41,7 @@ const LoginPage = () => {
         if (gelenVeri.data.sonuc === true) {
           setDurum(1);
           if (yonlendirme === true) {
-            window.location.href = "/sepetim";
+            window.location.href = "/basket";
           } else {
             window.location.href = "/";
           }

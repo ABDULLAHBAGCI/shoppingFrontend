@@ -50,7 +50,7 @@ const AdminEditProductPage = () => {
       "kategori",
       event.target.kategori[event.target.kategori.selectedIndex].textContent
     );
-    formData.append("kategori_url", event.target.kategori.value);
+    formData.append("category_url", event.target.kategori.value);
     formData.append("marka", event.target.marka.value);
     formData.append("renk", event.target.renk.value);
     formData.append("cinsiyet", event.target.cinsiyet.value);
@@ -177,7 +177,7 @@ const AdminEditProductPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Home</a>
+                        <a href="/admin/home">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -222,7 +222,7 @@ const AdminEditProductPage = () => {
                                 kategoriler.map(function (bakilan) {
                                   return (
                                     <option
-                                      value={bakilan.kategori_url}
+                                      value={bakilan.category_url}
                                       selected={
                                         kategori === bakilan.kategori_isim
                                           ? "selected"

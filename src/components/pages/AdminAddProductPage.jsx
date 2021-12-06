@@ -47,7 +47,7 @@ const AdminAddProductPage = () => {
       "kategori",
       event.target.kategori[event.target.kategori.selectedIndex].textContent
     );
-    formData.append("kategori_url", event.target.kategori.value);
+    formData.append("category_url", event.target.kategori.value);
     formData.append("marka", event.target.marka.value);
     formData.append("renk", event.target.renk.value);
     formData.append("cinsiyet", event.target.cinsiyet.value);
@@ -108,7 +108,7 @@ const AdminAddProductPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Home</a>
+                        <a href="/admin/home">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -150,7 +150,7 @@ const AdminAddProductPage = () => {
                             >
                               {kategoriler.map(function (kategori) {
                                 return (
-                                  <option value={kategori.kategori_url}>
+                                  <option value={kategori.category_url}>
                                     {kategori.kategori_isim}
                                   </option>
                                 );

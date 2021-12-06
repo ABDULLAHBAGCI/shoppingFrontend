@@ -63,7 +63,7 @@ const AdminCategoriesPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/anasayfa">Home</a>
+                        <a href="/admin/home">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -131,7 +131,7 @@ const AdminCategoriesPage = () => {
                     id={kategori._id}
                     index={index + 1}
                     isim={kategori.kategori_isim}
-                    url={kategori.kategori_url}
+                    url={kategori.category_url}
                     aciklama={kategori.kategori_aciklama}
                   />
                 );

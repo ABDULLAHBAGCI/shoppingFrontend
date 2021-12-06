@@ -149,7 +149,7 @@ const RegisterPage = () => {
                       <div class="form-group col-sm-12">
                         <label>Adress</label>
                         <input
-                          name="adress"
+                          name="adres"
                           required
                           type="text"
                           class="form-control"
@@ -210,7 +210,7 @@ const RegisterPage = () => {
                   </form>
                   <hr />
                   <p class="text-center">
-                  Already a member ? <a href="/giris">Login</a>
+                  Already a member ? <a href="/login">Login</a>
                   </p>
                 </article>
               </div>

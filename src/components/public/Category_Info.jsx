@@ -11,7 +11,7 @@ const Category_Info = () => {
     axios
       .get(
         "http://localhost:5000/api/kategori_bireysel/" +
-          parametreler.kategori_url
+          parametreler.category_url
       )
       .then(function (gelenVeri) {
         setkategoriIsim(gelenVeri.data[0].kategori_isim);

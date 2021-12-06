@@ -28,7 +28,7 @@ function Giris(props) {
           setDenenme(false);
           setBaslik("Welcome!");
 
-          window.location.href = "/admin/anasayfa";
+          window.location.href = "/admin/home";
         } else {
           setGiris(false);
           setButonYazi("Login");

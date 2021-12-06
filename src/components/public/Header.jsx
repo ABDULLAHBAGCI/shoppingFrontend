@@ -30,13 +30,13 @@ const Header = () => {
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="/profile" className="nav-link">
                   Account
                 </a>
               </li>
 
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a href="/basket" className="nav-link">
                   Payment Page
                 </a>
               </li>

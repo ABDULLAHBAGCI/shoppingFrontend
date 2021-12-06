@@ -42,15 +42,15 @@ const Header_Login = () => {
       <div>
         {durum === 2 && (
           <React.StrictMode>
-            <a href="/giris">Login</a>
+            <a href="/login">Login</a>
             <span className="dark-transp"> | </span>
-            <a href="/kayit"> Register</a>
+            <a href="/register"> Register</a>
           </React.StrictMode>
         )}
 
         {durum === 1 && (
           <React.StrictMode>
-            <a href="/profilim">Profile</a>
+            <a href="/profile">Profile</a>
             <span className="dark-transp"> | </span>
             <a onClick={cikisYap} href="#">
               Logout

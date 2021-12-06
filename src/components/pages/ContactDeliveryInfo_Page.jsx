@@ -186,7 +186,7 @@ const ContactDeliveryInfo_Page = () => {
 
                   <Link
                     to={{
-                      pathname: "/odeme",
+                      pathname: "/payment",
                       state: {
                         urunler: data.state,
                         iletisim2: {
