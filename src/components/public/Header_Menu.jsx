@@ -24,7 +24,7 @@ const Header_Menu = () => {
       {kategoriler.map(function (kategori) {
         return (
           <li className="nav-item">
-            <a className="nav-link" href={`/kategori/${kategori.category_url}`}>
+            <a className="nav-link" href={`/kategori/${kategori.kategori_url}`}>
               {kategori.kategori_isim}
             </a>
           </li>

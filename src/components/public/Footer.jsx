@@ -104,13 +104,13 @@ const Footer = () => {
                     <a href="#">Adidas</a>
                   </li>
                   <li>
-                    <a href="#">Puma</a>
+                    <a href="#">Lacoste</a>
                   </li>
                   <li>
-                    <a href="#">Reebok</a>
+                    <a href="#">Frappoli</a>
                   </li>
                   <li>
-                    <a href="#">Nike</a>
+                    <a href="#">Columbia</a>
                   </li>
                 </ul>
               </aside>

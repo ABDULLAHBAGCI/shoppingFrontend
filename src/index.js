@@ -32,59 +32,59 @@ ReactDOM.render(
       <Route exact path="/">
         <HomePage />
       </Route>
-      <Route path="/product/:id">
+      <Route path="/urun/:id">
         <ProductPage />
       </Route>
-      <Route path="/category/:category_url">
+      <Route path="/kategori/:kategori_url">
         <CategoryPage />
       </Route>
-      <Route path="/basket">
+      <Route path="/sepetim">
         <CartPage />
       </Route>
-      <Route path="/register">
+      <Route path="/kayit">
         <RegisterPage />
       </Route>
-      <Route path="/login">
+      <Route path="/giris">
         <LoginPage />
       </Route>
-      <Route path="/payment">
+      <Route path="/odeme">
         <Elements stripe={promise}>
           <PaymentPage />
         </Elements>
       </Route>
-      <Route path="/profile">
+      <Route path="/profilim">
         <ProfilePage />
       </Route>
-      <Route path="/cargo-information">
+      <Route path="/kargo-bilgileri">
         <ContactDeliveryInfo_Page />
       </Route>
-      <Route path="/admin/login"></Route>
-      <Route path="/admin/home">
+      <Route path="/admin/giris"></Route>
+      <Route path="/admin/anasayfa">
         <AdminHomePage />
       </Route>
-      <Route path="/admin/product">
+      <Route path="/admin/urunler">
         <AdminProductListPage />
       </Route>
-      <Route path="/admin/add-product">
+      <Route path="/admin/urun-ekle">
         <AdminAddProductPage />
       </Route>
-      <Route path="/admin/orders">
+      <Route path="/admin/siparisler">
         <AdminOrderListPage />
       </Route>
-      <Route path="/admin/login">
+      <Route path="/admin/giris">
         <AdminLoginPage />
       </Route>
-      <Route path="/admin/edit-orders"></Route>
-      <Route path="/admin/comments">
+      <Route path="/admin/siparis-duzenle"></Route>
+      <Route path="/admin/yorumlar">
         <AdminCommentListPage />
       </Route>
-      <Route path="/admin/categories">
+      <Route path="/admin/kategoriler">
         <AdminCategoriesPage />
       </Route>
-      <Route path="/admin/users">
+      <Route path="/admin/kullanicilar">
         <AdminUserListPage />
       </Route>
-      <Route path="/admin/edit-product">
+      <Route path="/admin/urun_duzenle">
         <AdminEditProductPage />
       </Route>
     </Router>

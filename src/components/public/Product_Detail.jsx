@@ -125,7 +125,7 @@ const Product_Detail = () => {
       <Product_Info
         isim={detay.isim}
         kategori_isim={detay.kategori}
-        category_url={detay.category_url}
+        kategori_url={detay.kategori_url}
       />
       <section className="section-content padding-y">
         <div className="container">
@@ -277,7 +277,7 @@ const Product_Detail = () => {
         </div>
       </section>
 
-      <Product_Similar category_url={detay.category_url} id={parametreler.id} />
+      <Product_Similar kategori_url={detay.kategori_url} id={parametreler.id} />
     </React.StrictMode>
   );
 };

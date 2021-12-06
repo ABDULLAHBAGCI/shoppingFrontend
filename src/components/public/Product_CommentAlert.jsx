@@ -7,10 +7,10 @@ const Poruduct_CommentAlert = () => {
       You must be registered or logged in to post a comment.
       </div>
       <br />
-      <a href="/register" class="btn btn-danger">
+      <a href="/kayit" class="btn btn-danger">
         Register
       </a>
-      <a href="/login" class="btn btn-danger ml-2">
+      <a href="/giris" class="btn btn-danger ml-2">
         Login
       </a>
     </div>

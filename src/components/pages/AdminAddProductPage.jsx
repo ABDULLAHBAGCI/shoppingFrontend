@@ -47,7 +47,7 @@ const AdminAddProductPage = () => {
       "kategori",
       event.target.kategori[event.target.kategori.selectedIndex].textContent
     );
-    formData.append("category_url", event.target.kategori.value);
+    formData.append("kategori_url", event.target.kategori.value);
     formData.append("marka", event.target.marka.value);
     formData.append("renk", event.target.renk.value);
     formData.append("cinsiyet", event.target.cinsiyet.value);
@@ -78,7 +78,7 @@ const AdminAddProductPage = () => {
         },
       })
       .then(function (gelenVeri) {
-        console.log("Registration is OK.");
+        console.log("Kayıt Tamamdır.");
       });
 
     event.preventDefault();
@@ -108,7 +108,7 @@ const AdminAddProductPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/home">Home</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -135,8 +135,8 @@ const AdminAddProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="isim"
-                            placeholder="Title"
+                            name="name"
+                            placeholder="name"
                           />
                         </div>
                       </div>
@@ -145,12 +145,12 @@ const AdminAddProductPage = () => {
                           <div className="bg-light p-2 rounded  d-flex align-items-center ">
                             <span class="w-25">Category</span>
                             <select
-                              name="kategori"
+                              name="category"
                               class=" w-75 float-right rounded border-light"
                             >
                               {kategoriler.map(function (kategori) {
                                 return (
-                                  <option value={kategori.category_url}>
+                                  <option value={kategori.kategori_url}>
                                     {kategori.kategori_isim}
                                   </option>
                                 );
@@ -163,10 +163,10 @@ const AdminAddProductPage = () => {
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Erkek"
+                                value="Men"
                                 type="radio"
                                 id="customRadioInline1"
-                                name="cinsiyet"
+                                name="gender"
                                 class="custom-control-input"
                               />
                               <label
@@ -179,10 +179,10 @@ const AdminAddProductPage = () => {
                             <div class="custom-control custom-radio custom-control-inline">
                               <input
                                 required
-                                value="Kadın"
+                                value="Women"
                                 type="radio"
                                 id="customRadioInline2"
-                                name="cinsiyet"
+                                name="gender"
                                 class="custom-control-input"
                               />
                               <label
@@ -202,8 +202,8 @@ const AdminAddProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="ind_fiyat"
-                            placeholder="Discounted price"
+                            name="dis_price"
+                            placeholder="Discounted Price"
                           />
                         </div>
                         <div className="col">
@@ -212,7 +212,7 @@ const AdminAddProductPage = () => {
                             className="form-control"
                             type="number"
                             step="0.01"
-                            name="normal_fiyat"
+                            name="normal_price"
                             placeholder="Normal Price"
                           />
                         </div>
@@ -224,7 +224,7 @@ const AdminAddProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="marka"
+                            name="brand"
                             placeholder="Brand"
                           />
                         </div>
@@ -233,7 +233,7 @@ const AdminAddProductPage = () => {
                             required
                             className="form-control"
                             type="text"
-                            name="renk"
+                            name="color"
                             placeholder="Color"
                           />
                         </div>
@@ -242,11 +242,11 @@ const AdminAddProductPage = () => {
                         placeholder="Description"
                         required
                         className="form-control mb-2"
-                        name="aciklama"
+                        name="description"
                         rows="3"
                       ></textarea>
 
-                      <div className="pt-1 pb-0">Enter stock amount</div>
+                      <div className="pt-1 pb-0">Enter Number of Stoock</div>
                       <hr className="p-0 mt-2" />
                       <div className="row">
                         <div className="col-md-6 col-lg-3 col-sm-12">
@@ -261,7 +261,7 @@ const AdminAddProductPage = () => {
                               name="s"
                               type="number"
                               class="form-control"
-                              placeholder="Enter Amount"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -278,7 +278,7 @@ const AdminAddProductPage = () => {
                               name="m"
                               type="number"
                               class="form-control"
-                              placeholder="Enter Amount"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -295,7 +295,7 @@ const AdminAddProductPage = () => {
                               name="l"
                               type="number"
                               class="form-control"
-                              placeholder="Enter Amount"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>
@@ -312,7 +312,7 @@ const AdminAddProductPage = () => {
                               name="xl"
                               type="number"
                               class="form-control"
-                              placeholder="Enter Amount"
+                              placeholder="Enter an amount"
                               aria-describedby="basic-addon1"
                             />
                           </div>

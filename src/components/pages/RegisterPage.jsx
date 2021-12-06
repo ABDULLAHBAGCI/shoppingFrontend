@@ -69,14 +69,14 @@ const RegisterPage = () => {
               <div class="card">
                 <article class="card-body">
                   <header class="mb-4">
-                    <h4 class="card-title">Üye Ol</h4>
+                    <h4 class="card-title">Register</h4>
                   </header>
                   <form onSubmit={uyeOl}>
                     <div class="form-row">
                       <div class="col form-group">
                         <label>Name</label>
                         <input
-                          name="isim"
+                          name="name"
                           autoComplete="off"
                           type="text"
                           class="form-control"
@@ -87,7 +87,7 @@ const RegisterPage = () => {
                       <div class="col form-group">
                         <label>Surname</label>
                         <input
-                          name="soyisim"
+                          name="surname"
                           autoComplete="off"
                           type="text"
                           class="form-control"
@@ -118,7 +118,7 @@ const RegisterPage = () => {
                       <div class="col form-group">
                         <label>Phone</label>
                         <input
-                          name="telefon"
+                          name="phone"
                           class="form-control"
                           placeholder="Enter phone number"
                           required
@@ -130,8 +130,8 @@ const RegisterPage = () => {
                         <input
                           class="custom-control-input"
                           type="radio"
-                          name="cinsiyet"
-                          value="Erkek"
+                          name="gender"
+                          value="Men"
                         />
                         <span class="custom-control-label"> Men </span>
                       </label>
@@ -139,17 +139,17 @@ const RegisterPage = () => {
                         <input
                           class="custom-control-input"
                           type="radio"
-                          name="cinsiyet"
-                          value="Kadın"
+                          name="gender"
+                          value="Women"
                         />
-                        <span class="custom-control-label"> Women </span>
+                        <span class="custom-control-label"> Woman </span>
                       </label>
                     </div>
                     <div class="form-row">
                       <div class="form-group col-sm-12">
                         <label>Adress</label>
                         <input
-                          name="adres"
+                          name="adress"
                           required
                           type="text"
                           class="form-control"
@@ -159,9 +159,9 @@ const RegisterPage = () => {
                     </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <label>Enter password</label>
+                        <label>Create password</label>
                         <input
-                          name="sifre"
+                          name="password"
                           class={`form-control ${
                             state.sonuc === 3 && "is-invalid"
                           }`}
@@ -175,9 +175,9 @@ const RegisterPage = () => {
                         </small>
                       </div>
                       <div class="form-group col-md-6">
-                        <label>Repeat Password</label>
+                        <label>Password Repeat</label>
                         <input
-                          name="resifre"
+                          name="repassword"
                           class={`form-control ${
                             state.sonuc === 3 && "is-invalid"
                           }`}
@@ -205,12 +205,12 @@ const RegisterPage = () => {
                       </button>
                     </div>
                     <p class="text-muted">
-                    By clicking the "Register" button, you accept the confidentiality agreement.
+                      By clicking the register button, you accept the confidentiality agreement.
                     </p>
                   </form>
                   <hr />
                   <p class="text-center">
-                  Already a member? <a href="/login">Login</a>
+                  Already a member ? <a href="/giris">Login</a>
                   </p>
                 </article>
               </div>

@@ -35,7 +35,7 @@ const Admin_LeftMenu = () => {
             </li>
             <li className="p-15 m-t-10">
               <a
-                href="/admin/add-product"
+                href="/admin/urun-ekle"
                 className="btn btn-block create-btn text-white no-block d-flex align-items-center"
               >
                 <i className="fa fa-plus-square"></i>
@@ -45,10 +45,10 @@ const Admin_LeftMenu = () => {
             <li className="sidebar-item">
               <a
                 className={`sidebar-link waves-effect waves-dark sidebar-link  pl-0 ml-0 ${
-                  window.location.href.includes("/admin/home") &&
+                  window.location.href.includes("/admin/anasayfa") &&
                   "active text-info"
                 }`}
-                href="/admin/home"
+                href="/admin/anasayfa"
                 aria-expanded="false"
               >
                 <i className="mdi mdi-view-dashboard"></i>
@@ -58,10 +58,10 @@ const Admin_LeftMenu = () => {
             <li className="sidebar-item">
               <a
                 className={`sidebar-link waves-effect waves-dark sidebar-link  pl-0 ml-0 ${
-                  window.location.href.includes("/admin/product") &&
+                  window.location.href.includes("/admin/urunler") &&
                   "active text-info"
                 }`}
-                href="/admin/product"
+                href="/admin/urunler"
                 aria-expanded="false"
               >
                 <i className="mdi mdi-account-network"></i>
@@ -71,10 +71,10 @@ const Admin_LeftMenu = () => {
             <li className="sidebar-item">
               <a
                 className={`sidebar-link waves-effect waves-dark sidebar-link  pl-0 ml-0 ${
-                  window.location.href.includes("/admin/orders") &&
+                  window.location.href.includes("/admin/siparisler") &&
                   "active text-info"
                 }`}
-                href="/admin/orders"
+                href="/admin/siparisler"
                 aria-expanded="false"
               >
                 <i className="mdi mdi-account-network"></i>
@@ -84,10 +84,10 @@ const Admin_LeftMenu = () => {
             <li className="sidebar-item">
               <a
                 className={`sidebar-link waves-effect waves-dark sidebar-link  pl-0 ml-0 ${
-                  window.location.href.includes("/admin/categories") &&
+                  window.location.href.includes("/admin/kategoriler") &&
                   "active text-info"
                 }`}
-                href="/admin/categories"
+                href="/admin/kategoriler"
                 aria-expanded="false"
               >
                 <i className="mdi mdi-border-all"></i>
@@ -97,10 +97,10 @@ const Admin_LeftMenu = () => {
             <li className="sidebar-item">
               <a
                 className={`sidebar-link waves-effect waves-dark sidebar-link  pl-0 ml-0 ${
-                  window.location.href.includes("/admin/users") &&
+                  window.location.href.includes("/admin/kullanicilar") &&
                   "active text-info"
                 }`}
-                href="/admin/users"
+                href="/admin/kullanicilar"
                 aria-expanded="false"
               >
                 <i className="mdi mdi-face"></i>
@@ -110,10 +110,10 @@ const Admin_LeftMenu = () => {
             <li className="sidebar-item">
               <a
                 className={`sidebar-link waves-effect waves-dark sidebar-link  pl-0 ml-0 ${
-                  window.location.href.includes("/admin/comments") &&
+                  window.location.href.includes("/admin/yorumlar") &&
                   "active text-info"
                 }`}
-                href="/admin/comments"
+                href="/admin/yorumlar"
                 aria-expanded="false"
               >
                 <i className="mdi mdi-file"></i>

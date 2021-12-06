@@ -71,7 +71,7 @@ const AdminProductListPage = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/home">Home</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -108,11 +108,11 @@ const AdminProductListPage = () => {
                     <th scope="col">Name</th>
                     <th scope="col">Category</th>
                     <th scope="col">Brand</th>
-                    <th scope="col">İnd. Fiyat</th>
-                    <th scope="col">Dis. Price</th>
-                    <th scope="col">Number of Sale</th>
+                    <th scope="col">Discounted price</th>
+                    <th scope="col">Normal Price</th>
+                    <th scope="col">Number of Sales</th>
                     <th scope="col">Stock</th>
-                    <th scope="col">Transaction</th>
+                    <th scope="col">Process</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -139,7 +139,7 @@ const AdminProductListPage = () => {
                             Delete
                           </button>
                           <a
-                            href={`/admin/edit-product?id=${urun._id}`}
+                            href={`/admin/urun_duzenle?id=${urun._id}`}
                             className="ml-2 btn btn-dark"
                           >
                             Edit

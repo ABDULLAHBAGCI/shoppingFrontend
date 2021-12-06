@@ -10,7 +10,7 @@ const Product_Info = (props) => {
               <a href="/">Home</a>
             </li>
             <li className="breadcrumb-item">
-              <a href={`/kategori/${props.category_url}`}>
+              <a href={`/kategori/${props.kategori_url}`}>
                 {props.kategori_isim}
               </a>
             </li>

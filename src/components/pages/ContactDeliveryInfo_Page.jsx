@@ -18,8 +18,8 @@ const ContactDeliveryInfo_Page = () => {
   const urunler = data.state;
   const [hangisi, setHangisi] = useState("0");
   /*
-    0 : kendi bilgileri gösterilsin
-    1 : yeni bilgi ekle
+     0 : kendi bilgileri gösterilsin
+     1 : yeni bilgi ekle
   */
   var toplam = 0;
 
@@ -101,15 +101,15 @@ const ContactDeliveryInfo_Page = () => {
                 <React.StrictMode>
                   <article className="card mb-4">
                     <div className="card-body">
-                      <h4 className="card-title mb-4">Contact information</h4>
+                      <h4 className="card-title mb-4">Contact Information</h4>
                       <form action="">
                         <div className="row">
                           <div className="form-group col-sm-6">
-                            <label>Name</label>
+                            <label>İsim</label>
                             <input
                               defaultValue={yeniBilgiler.isim}
                               onChange={bilgiEkle}
-                              name="isim"
+                              name="name"
                               type="text"
                               placeholder="Enter name"
                               className="form-control"
@@ -120,9 +120,9 @@ const ContactDeliveryInfo_Page = () => {
                             <input
                               defaultValue={yeniBilgiler.soyisim}
                               onChange={bilgiEkle}
-                              name="soyisim"
+                              name="surname"
                               type="text"
-                              placeholder="Enter surname"
+                              placeholder="Enter Surname"
                               className="form-control"
                             />
                           </div>
@@ -131,9 +131,9 @@ const ContactDeliveryInfo_Page = () => {
                             <input
                               defaultValue={yeniBilgiler.telefon}
                               onChange={bilgiEkle}
-                              name="telefon"
+                              name="phone"
                               type="text"
-                              placeholder="Enter Phone"
+                              placeholder="Enter phone number"
                               className="form-control"
                             />
                           </div>
@@ -156,7 +156,7 @@ const ContactDeliveryInfo_Page = () => {
                             <input
                               defaultValue={yeniBilgiler.adres}
                               onChange={bilgiEkle}
-                              name="adres"
+                              name="adress"
                               type="text"
                               placeholder="Enter adress"
                               className="form-control"
@@ -186,7 +186,7 @@ const ContactDeliveryInfo_Page = () => {
 
                   <Link
                     to={{
-                      pathname: "/payment",
+                      pathname: "/odeme",
                       state: {
                         urunler: data.state,
                         iletisim2: {
@@ -224,7 +224,7 @@ const ContactDeliveryInfo_Page = () => {
                   </Link>
 
                   <a href="#" className="btn btn-light btn-block">
-                    Countinue Shopping
+                  Continue Shopping
                   </a>
                 </div>
               </div>

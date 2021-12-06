@@ -30,7 +30,7 @@ const Category_Products = () => {
   function urunSayisiniAl() {
     var adres =
       "http://localhost:5000/api/urunsayisi/" +
-      parametreler.category_url +
+      parametreler.kategori_url +
       "?marka=" +
       marka +
       "&min=" +
@@ -46,7 +46,7 @@ const Category_Products = () => {
   function urunleriAl() {
     var adres =
       "http://localhost:5000/api/kategori/" +
-      parametreler.category_url +
+      parametreler.kategori_url +
       "/" +
       query.get("sayfa") +
       "?secim=" +
@@ -71,7 +71,7 @@ const Category_Products = () => {
     if (event.target.value === "Yeni ürünler") {
       adres =
         "http://localhost:3000/kategori/" +
-        parametreler.category_url +
+        parametreler.kategori_url +
         "?sayfa=1" +
         "&secim=1" +
         "&marka=" +
@@ -83,7 +83,7 @@ const Category_Products = () => {
     } else if (event.target.value === "Çok satanlar") {
       adres =
         "http://localhost:3000/kategori/" +
-        parametreler.category_url +
+        parametreler.kategori_url +
         "?sayfa=1" +
         "&secim=2" +
         "&marka=" +
@@ -95,7 +95,7 @@ const Category_Products = () => {
     } else if (event.target.value === "En düşük fiyat") {
       adres =
         "http://localhost:3000/kategori/" +
-        parametreler.category_url +
+        parametreler.kategori_url +
         "?sayfa=1" +
         "&secim=3" +
         "&marka=" +

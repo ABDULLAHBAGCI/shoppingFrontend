@@ -58,12 +58,12 @@ const AdminCategoriesPage = () => {
           <div className="page-breadcrumb">
             <div className="row align-items-center">
               <div className="col-9">
-                <h4 className="page-title">Category Lists</h4>
+                <h4 className="page-title">Category List</h4>
                 <div className="d-flex align-items-center">
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <a href="/admin/home">Home</a>
+                        <a href="/admin/anasayfa">Home</a>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -90,7 +90,7 @@ const AdminCategoriesPage = () => {
                       type="text"
                       className="form-control"
                       id="inputEmail4"
-                      name="isim"
+                      name="name"
                       placeholder="Enter Name"
                     />
                   </div>
@@ -100,7 +100,7 @@ const AdminCategoriesPage = () => {
                       className="form-control"
                       id="inputPassword4"
                       name="url"
-                      placeholder="Enter Url"
+                      placeholder="Enter URL"
                     />
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const AdminCategoriesPage = () => {
                       type="text"
                       className="form-control"
                       id="inputAddress"
-                      name="aciklama"
+                      name="description"
                       placeholder="Enter description"
                     />
                   </div>
@@ -131,7 +131,7 @@ const AdminCategoriesPage = () => {
                     id={kategori._id}
                     index={index + 1}
                     isim={kategori.kategori_isim}
-                    url={kategori.category_url}
+                    url={kategori.kategori_url}
                     aciklama={kategori.kategori_aciklama}
                   />
                 );

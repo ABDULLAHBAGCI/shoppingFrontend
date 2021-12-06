@@ -28,7 +28,7 @@ const LoginPage = () => {
 
     axios
       .post(
-        "http://localhost:5000/api/kullanici/login",
+        "http://localhost:5000/api/kullanici/giris",
         {
           email: email,
           sifre: sifre,
@@ -41,7 +41,7 @@ const LoginPage = () => {
         if (gelenVeri.data.sonuc === true) {
           setDurum(1);
           if (yonlendirme === true) {
-            window.location.href = "/basket";
+            window.location.href = "/sepetim";
           } else {
             window.location.href = "/";
           }
@@ -65,7 +65,7 @@ const LoginPage = () => {
             <aside className="col-md-4">
               <div className="card">
                 <div className="card-body">
-                  <h4 className="card-title mb-4">Login </h4>
+                  <h4 className="card-title mb-4">Login</h4>
                   <form onSubmit={girisYap}>
                     <a href="#" className="btn btn-facebook btn-block mb-2">
                       <i className="fab fa-facebook-f"></i> &nbsp; Login with Facebook
@@ -121,7 +121,7 @@ const LoginPage = () => {
                             <span className="sr-only">Loading...</span>
                           </div>
                         ) : (
-                          "Login"
+                          "Giriş Yap"
                         )}
                       </button>
                     </div>
