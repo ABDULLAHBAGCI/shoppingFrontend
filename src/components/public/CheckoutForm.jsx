@@ -32,7 +32,7 @@ export default function CheckoutForm() {
   const elements = useElements();
   useEffect(() => {
     window
-      .fetch("http://localhost:5000/create-payment-intent", {
+      .fetch("https://naushopping.com:5000/create-payment-intent", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -91,7 +91,7 @@ export default function CheckoutForm() {
   function siparisOlustur() {
     axios
       .post(
-        "http://localhost:5000/api/siparis/olustur",
+        "https://naushopping.com:5000/api/siparis/olustur",
         {
           urunler: urunler,
           odemeid: clientSecret,

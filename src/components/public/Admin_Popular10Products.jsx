@@ -6,7 +6,7 @@ const Admin_Popular10Products = () => {
 
   function bilgileriAl() {
     axios
-      .get("http://localhost:5000/admin/api/populerurunler")
+      .get("https://naushopping.com:5000/admin/api/populerurunler")
       .then(function (gelenVeri) {
         setBilgiler(gelenVeri.data);
       });
@@ -18,7 +18,7 @@ const Admin_Popular10Products = () => {
     console.log(event.target.value);
     axios
       .delete(
-        "http://localhost:5000/admin/api/urunsil?id=" + event.target.value
+        "https://naushopping.com:5000/admin/api/urunsil?id=" + event.target.value
       )
       .then(function (gelenVeri) {
         if (gelenVeri.data.sonuc === true) {

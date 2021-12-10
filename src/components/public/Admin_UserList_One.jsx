@@ -7,7 +7,7 @@ const Admin_UserList_One = (props) => {
   function engelle() {
     setEngel(1);
     axios.patch(
-      "http://localhost:5000/admin/api/kullanici_engel",
+      "https://naushopping.com:5000/admin/api/kullanici_engel",
       {
         id: props.id,
         engel: 1,
@@ -18,7 +18,7 @@ const Admin_UserList_One = (props) => {
   function engeliKaldir() {
     setEngel(0);
     axios.patch(
-      "http://localhost:5000/admin/api/kullanici_engel",
+      "https://naushopping.com:5000/admin/api/kullanici_engel",
       {
         id: props.id,
         engel: 0,

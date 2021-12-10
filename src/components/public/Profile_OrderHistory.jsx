@@ -15,7 +15,7 @@ const Profile_OrderHistory = () => {
   ]);
   function bilgileriAl() {
     axios
-      .get("http://localhost:5000/api/profil/siparisgecmisi", {
+      .get("https://naushopping.com:5000/api/profil/siparisgecmisi", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

@@ -34,7 +34,7 @@ const RegisterPage = () => {
     } else {
       setState((oncekiler) => ({ ...oncekiler, durum: 1 }));
       axios
-        .post("http://localhost:5000/api/kullanici/olusturma", {
+        .post("https://naushopping.com:5000/api/kullanici/olusturma", {
           isim: isim,
           soyisim: soyisim,
           email: email,
@@ -76,7 +76,7 @@ const RegisterPage = () => {
                       <div class="col form-group">
                         <label>Name</label>
                         <input
-                          name="name"
+                          name="isim"
                           autoComplete="off"
                           type="text"
                           class="form-control"
@@ -87,11 +87,11 @@ const RegisterPage = () => {
                       <div class="col form-group">
                         <label>Surname</label>
                         <input
-                          name="surname"
+                          name="soyisim"
                           autoComplete="off"
                           type="text"
                           class="form-control"
-                          placeholder="Enter surname"
+                          placeholder="Soyisim giriniz"
                           required
                         />
                       </div>
@@ -111,16 +111,16 @@ const RegisterPage = () => {
                         />
                         <small class="form-text text-muted">
                           {state.sonuc === 2
-                            ? "This email is already in use"
-                            : "Your email address is required for login."}
+                            ? "This email is already in use!"
+                            : "Your email address is required for login!"}
                         </small>
                       </div>
                       <div class="col form-group">
                         <label>Phone</label>
                         <input
-                          name="phone"
+                          name="telefon"
                           class="form-control"
-                          placeholder="Enter phone number"
+                          placeholder="Enter phone"
                           required
                         />
                       </div>
@@ -130,8 +130,8 @@ const RegisterPage = () => {
                         <input
                           class="custom-control-input"
                           type="radio"
-                          name="gender"
-                          value="Men"
+                          name="cinsiyet"
+                          value="Erkek"
                         />
                         <span class="custom-control-label"> Men </span>
                       </label>
@@ -139,10 +139,10 @@ const RegisterPage = () => {
                         <input
                           class="custom-control-input"
                           type="radio"
-                          name="gender"
-                          value="Women"
+                          name="cinsiyet"
+                          value="Kadın"
                         />
-                        <span class="custom-control-label"> Woman </span>
+                        <span class="custom-control-label"> Women </span>
                       </label>
                     </div>
                     <div class="form-row">
@@ -153,7 +153,7 @@ const RegisterPage = () => {
                           required
                           type="text"
                           class="form-control"
-                          placeholder="Enter adress"
+                          placeholder="Enter Adress"
                         />
                       </div>
                     </div>
@@ -161,7 +161,7 @@ const RegisterPage = () => {
                       <div class="form-group col-md-6">
                         <label>Create password</label>
                         <input
-                          name="password"
+                          name="sifre"
                           class={`form-control ${
                             state.sonuc === 3 && "is-invalid"
                           }`}
@@ -170,14 +170,14 @@ const RegisterPage = () => {
                         />
                         <small class="form-text text-muted">
                           {state.sonuc === 3
-                            ? "Passwords are not the same."
-                            : "Password must be at least 8 characters"}
+                            ? "Passwords are not the same!"
+                            : "Password must be at least 8 characters!"}
                         </small>
                       </div>
                       <div class="form-group col-md-6">
                         <label>Password Repeat</label>
                         <input
-                          name="repassword"
+                          name="resifre"
                           class={`form-control ${
                             state.sonuc === 3 && "is-invalid"
                           }`}
@@ -193,7 +193,7 @@ const RegisterPage = () => {
                         disabled={`${state.durum === 0 ? "" : "disabled"}`}
                       >
                         {state.durum === 0 ? (
-                          "Register"
+                          "Kayıt Ol"
                         ) : (
                           <div
                             class="spinner-border spinner-border-sm"
@@ -205,12 +205,12 @@ const RegisterPage = () => {
                       </button>
                     </div>
                     <p class="text-muted">
-                      By clicking the register button, you accept the confidentiality agreement.
+                    By clicking the "Register" button, you accept the confidentiality agreement.
                     </p>
                   </form>
                   <hr />
                   <p class="text-center">
-                  Already a member ? <a href="/login">Login</a>
+                  Already a member? <a href="/login">Login</a>
                   </p>
                 </article>
               </div>
@@ -218,10 +218,8 @@ const RegisterPage = () => {
           </div>
         </div>
       </section>
-
       <Footer />
     </React.StrictMode>
   );
 };
-
 export default RegisterPage;

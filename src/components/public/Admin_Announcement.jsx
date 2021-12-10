@@ -6,7 +6,7 @@ const Admin_Announcement = () => {
 
   function duyurulariAl() {
     axios
-      .get("http://localhost:5000/admin/api/duyuru")
+      .get("https://naushopping.com:5000/admin/api/duyuru")
       .then(function (gelenVeri) {
         setDuyurular(gelenVeri.data);
       });
@@ -17,7 +17,7 @@ const Admin_Announcement = () => {
   function duyuruEkle(event) {
     var icerik = event.target.duyuru.value;
     axios
-      .post("http://localhost:5000/admin/api/duyuru", {
+      .post("https://naushopping.com:5000/admin/api/duyuru", {
         duyuru: icerik,
       })
       .then(function (gelenVeri) {

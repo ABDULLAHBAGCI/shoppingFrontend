@@ -20,7 +20,7 @@ const Product_CreateComment = (props) => {
     var yildiz = event.target.yildiz.value;
 
     axios
-      .post("http://localhost:5000/api/yorum", {
+      .post("https://naushopping.com:5000/api/yorum", {
         urun_id: urun_id,
         isim: uyeisim,
         kullanici_id: uyeid,

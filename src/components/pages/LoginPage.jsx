@@ -28,7 +28,7 @@ const LoginPage = () => {
 
     axios
       .post(
-        "http://localhost:5000/api/kullanici/giris",
+        "https://naushopping.com:5000/api/kullanici/giris",
         {
           email: email,
           sifre: sifre,

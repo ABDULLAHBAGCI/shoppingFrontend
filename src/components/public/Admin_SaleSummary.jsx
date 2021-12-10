@@ -8,7 +8,7 @@ const Admin_SaleSummary = () => {
 
   function satisOzetiniAl() {
     axios
-      .get("http://localhost:5000/admin/api/aylik_satisozeti")
+      .get("https://naushopping.com:5000/admin/api/aylik_satisozeti")
       .then(function (gelenVeri) {
         var satisOzeti = gelenVeri.data;
         var tarihler = [];

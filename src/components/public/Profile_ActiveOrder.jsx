@@ -16,7 +16,7 @@ const Profile_ActiveOrder = () => {
 
   function bilgileriAl() {
     axios
-      .get("http://localhost:5000/api/profil/aktifsiparis", {
+      .get("https://naushopping.com:5000/api/profil/aktifsiparis", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

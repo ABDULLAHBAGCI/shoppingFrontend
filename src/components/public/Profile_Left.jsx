@@ -4,7 +4,7 @@ import axios from "axios";
 const Profile_Left = (props) => {
   function cikisYap() {
     axios
-      .get("http://localhost:5000/api/kullanici/cikis", {
+      .get("https://naushopping.com:5000/api/kullanici/cikis", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

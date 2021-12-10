@@ -42,7 +42,7 @@ const Product_Detail = () => {
 
   function verileriAl() {
     axios
-      .get("http://localhost:5000/api/urun/detay/" + parametreler.id)
+      .get("https://naushopping.com:5000/api/urun/detay/" + parametreler.id)
       .then(function (gelenVeriler) {
         console.log(gelenVeriler.data[0]);
         setDetay(gelenVeriler.data[0]);

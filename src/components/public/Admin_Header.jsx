@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 const Admin_Header = () => {
   async function girisKontrol() {
     await axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("https://naushopping.com:5000/api/kullanici/giriskontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
@@ -20,7 +20,7 @@ const Admin_Header = () => {
 
   function cikisYap() {
     axios
-      .get("http://localhost:5000/api/kullanici/cikis", {
+      .get("https://naushopping.com:5000/api/kullanici/cikis", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

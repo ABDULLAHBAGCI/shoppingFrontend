@@ -9,7 +9,7 @@ const AdminProductListPage = () => {
 
   function urunleriAl() {
     axios
-      .get("http://localhost:5000/admin/api/tumurunler")
+      .get("https://naushopping.com:5000/admin/api/tumurunler")
       .then(function (gelenVeri) {
         setUrunler(gelenVeri.data);
         setSabitArray(gelenVeri.data);
@@ -35,7 +35,7 @@ const AdminProductListPage = () => {
   function urunSil(event) {
     var id = event.target.id;
     axios
-      .delete("http://localhost:5000/admin/api/urunsil?id=" + id)
+      .delete("https://naushopping.com:5000/admin/api/urunsil?id=" + id)
       .then(function (gelenVeri) {
         if (gelenVeri.data.sonuc === true) {
           var bosArray = sabitArray.filter(function (bakilan) {

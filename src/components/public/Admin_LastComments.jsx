@@ -7,7 +7,7 @@ const Admin_LastComments = () => {
 
   function yorumlariAl() {
     axios
-      .get("http://localhost:5000/admin/api/sonyorumlar")
+      .get("https://naushopping.com:5000/admin/api/sonyorumlar")
       .then(function (gelenVeri) {
         setYorumlar(gelenVeri.data);
       });

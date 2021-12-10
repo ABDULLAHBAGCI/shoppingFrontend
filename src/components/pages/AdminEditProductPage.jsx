@@ -16,7 +16,7 @@ const AdminEditProductPage = () => {
 
   function kategorileriAl() {
     axios
-      .get("http://localhost:5000/api/kategori_liste")
+      .get("https://naushopping.com:5000/api/kategori_liste")
       .then(function (gelenVeri) {
         setKategoriler(gelenVeri.data);
       });
@@ -79,7 +79,7 @@ const AdminEditProductPage = () => {
     }
 
     axios
-      .patch("http://localhost:5000/admin/api/urunguncelle", formData, {
+      .patch("https://naushopping.com:5000/admin/api/urunguncelle", formData, {
         onUploadProgress: (data) => {
           setProgress(Math.round((100 * data.loaded) / data.total));
         },
@@ -111,7 +111,7 @@ const AdminEditProductPage = () => {
 
   function bilgileriAl() {
     axios
-      .get("http://localhost:5000/api/urun/detay/" + query.get("id"))
+      .get("https://naushopping.com:5000/api/urun/detay/" + query.get("id"))
       .then(function (gelenVeri) {
         setIsim(gelenVeri.data[0].isim);
         setKategori(gelenVeri.data[0].kategori);

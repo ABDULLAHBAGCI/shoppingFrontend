@@ -12,7 +12,7 @@ const Profile_Information = () => {
 
   function bilgileriAl() {
     axios
-      .get("http://localhost:5000/api/profil/bilgiler", {
+      .get("https://naushopping.com:5000/api/profil/bilgiler", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
@@ -27,7 +27,7 @@ const Profile_Information = () => {
     setDurum(2);
     axios
       .patch(
-        "http://localhost:5000/api/profil/bilgiler",
+        "https://naushopping.com:5000/api/profil/bilgiler",
         {
           isim: event.target.isim.value,
           soyisim: event.target.soyisim.value,

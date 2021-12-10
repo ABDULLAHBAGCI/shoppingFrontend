@@ -13,7 +13,7 @@ const ProfilePage = () => {
 
   function girisKontrol() {
     axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("https://naushopping.com:5000/api/kullanici/giriskontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

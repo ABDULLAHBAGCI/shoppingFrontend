@@ -7,7 +7,7 @@ const HomePage_Popular = () => {
 
   function urunleriAl() {
     axios
-      .get("http://localhost:5000/api/populerurunler")
+      .get("https://naushopping.com:5000/api/populerurunler")
       .then(function (gelenVeri) {
         console.log(gelenVeri.data);
         setUrunler(gelenVeri.data);

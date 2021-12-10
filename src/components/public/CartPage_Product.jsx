@@ -82,7 +82,7 @@ const CartPage_Product = (props) => {
     setMiktar(props.miktar);
     setSize(props.size);
     axios
-      .get("http://localhost:5000/api/urun/detay/" + props.id)
+      .get("https://naushopping.com:5000/api/urun/detay/" + props.id)
       .then(function (gelenVeriler) {
         console.log(
           props.miktar,

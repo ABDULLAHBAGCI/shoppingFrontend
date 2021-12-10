@@ -29,7 +29,7 @@ const Category_Products = () => {
 
   function urunSayisiniAl() {
     var adres =
-      "http://localhost:5000/api/urunsayisi/" +
+      "https://naushopping.com:5000/api/urunsayisi/" +
       parametreler.category_url +
       "?marka=" +
       marka +
@@ -45,7 +45,7 @@ const Category_Products = () => {
 
   function urunleriAl() {
     var adres =
-      "http://localhost:5000/api/kategori/" +
+      "https://naushopping.com:5000/api/kategori/" +
       parametreler.category_url +
       "/" +
       query.get("sayfa") +

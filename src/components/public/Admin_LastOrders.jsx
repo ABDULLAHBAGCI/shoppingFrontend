@@ -5,7 +5,7 @@ const Admin_LastOrders = () => {
   const [siparisler, setSiparisler] = useState([]);
   function siparisleriAl() {
     axios
-      .get("http://localhost:5000/admin/api/son_siparisler")
+      .get("https://naushopping.com:5000/admin/api/son_siparisler")
       .then(function (gelenVeri) {
         setSiparisler(gelenVeri.data);
       });

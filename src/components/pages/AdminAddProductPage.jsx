@@ -15,7 +15,7 @@ const AdminAddProductPage = () => {
 
   function kategorileriAl() {
     axios
-      .get("http://localhost:5000/api/kategori_liste")
+      .get("https://3.144.168.144:5000/api/kategori_liste")
       .then(function (gelenVeri) {
         setKategoriler(gelenVeri.data);
       });
@@ -72,7 +72,7 @@ const AdminAddProductPage = () => {
     }
 
     axios
-      .post("http://localhost:5000/admin/api/urunolustur", formData, {
+      .post("https://3.144.168.144:5000/admin/api/urunolustur", formData, {
         onUploadProgress: (data) => {
           setProgress(Math.round((100 * data.loaded) / data.total));
         },

@@ -68,7 +68,7 @@ const Category_Filter = () => {
   function vtMarkalariAl() {
     axios
       .get(
-        "http://localhost:5000/api/kategori/filtre/marka/" +
+        "https://naushopping.com:5000/api/kategori/filtre/marka/" +
           parametreler.category_url
       )
       .then(function (gelenVeri) {

@@ -10,7 +10,7 @@ const Category_Info = () => {
   function bilgileriAl() {
     axios
       .get(
-        "http://localhost:5000/api/kategori_bireysel/" +
+        "https://naushopping.com:5000/api/kategori_bireysel/" +
           parametreler.category_url
       )
       .then(function (gelenVeri) {

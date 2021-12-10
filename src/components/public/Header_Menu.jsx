@@ -6,7 +6,7 @@ const Header_Menu = () => {
 
   function kategorileriAl() {
     axios
-      .get("http://localhost:5000/api/kategori_liste")
+      .get("https://naushopping.com:5000/api/kategori_liste")
       .then(function (gelenVeri) {
         setKategoriler(gelenVeri.data);
       });

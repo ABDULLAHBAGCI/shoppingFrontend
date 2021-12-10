@@ -16,7 +16,7 @@ const AdminOrderListPage = () => {
 
   function siparisleriAl() {
     axios
-      .get("http://localhost:5000/admin/api/tum_siparisler?sayfa=" + sayfa)
+      .get("https://naushopping.com:5000/admin/api/tum_siparisler?sayfa=" + sayfa)
       .then(function (gelenVeri) {
         setSiparisler(gelenVeri.data);
       });

@@ -21,7 +21,7 @@ const Admin_OrderList_One = (props) => {
 
   function uruneAitBilgilerAl() {
     axios
-      .get("http://localhost:5000/admin/api/siparis_bireysel?id=" + props.id)
+      .get("https://naushopping.com:5000/admin/api/siparis_bireysel?id=" + props.id)
       .then(function (gelenVeri) {
         setBilgiler(gelenVeri.data[0]);
         if (gelenVeri.data[0].durum.length > 3) {
@@ -127,7 +127,7 @@ const Admin_OrderList_One = (props) => {
       bosDurum.push({ islem: "Sipariş Hazırlanıyor" });
     }
 
-    axios.patch("http://localhost:5000/admin/api/siparis_durum_guncelle", {
+    axios.patch("https://naushopping.com:5000/admin/api/siparis_durum_guncelle", {
       id: props.id,
       durum: bosDurum,
     });
@@ -135,7 +135,7 @@ const Admin_OrderList_One = (props) => {
 
   function teslimEt() {
     axios
-      .patch("http://localhost:5000/admin/api/siparis_teslim", {
+      .patch("https://naushopping.com:5000/admin/api/siparis_teslim", {
         id: props.id,
         durum: [
           { islem: "Sipariş Hazırlanıyor" },

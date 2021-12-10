@@ -10,7 +10,7 @@ const AdminUserListPage = () => {
 
   function kullanicilariAl() {
     axios
-      .get("http://localhost:5000/admin/api/tum_kullanicilar", {
+      .get("https://naushopping.com:5000/admin/api/tum_kullanicilar", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

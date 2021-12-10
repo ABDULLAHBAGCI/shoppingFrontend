@@ -8,7 +8,7 @@ const Product_Similar = (props) => {
   function urunleriAl() {
     if (props.category_url !== undefined) {
       var adres =
-        "http://localhost:5000/api/urun/benzerurunler/" +
+        "https://naushopping.com:5000/api/urun/benzerurunler/" +
         props.category_url +
         "/" +
         props.id;

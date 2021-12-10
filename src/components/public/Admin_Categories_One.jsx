@@ -22,7 +22,7 @@ const Admin_Categories_One = (props) => {
   function bilgileriGuncelle(event) {
     axios
       .patch(
-        "http://localhost:5000/api/kategori_bireysel/guncelle?id=" + props.id,
+        "https://naushopping.com:5000/api/kategori_bireysel/guncelle?id=" + props.id,
         {
           kategori_aciklama: aciklama,
         }
@@ -35,7 +35,7 @@ const Admin_Categories_One = (props) => {
 
   function kategoriyiSil() {
     axios
-      .delete("http://localhost:5000/api/kategori_bireysel/sil?id=" + props.id)
+      .delete("https://naushopping.com:5000/api/kategori_bireysel/sil?id=" + props.id)
       .then(function (gelenVeri) {
         props.kategoriGuncellendi();
         setDurum(false);

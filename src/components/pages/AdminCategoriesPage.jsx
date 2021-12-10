@@ -13,7 +13,7 @@ const AdminCategoriesPage = () => {
   function kategorileriAl() {
     setKategoriler([]);
     axios
-      .get("http://localhost:5000/api/kategori_liste")
+      .get("https://naushopping.com:5000/api/kategori_liste")
       .then(function (gelenVeri) {
         setKategoriler(gelenVeri.data);
       });
@@ -23,7 +23,7 @@ const AdminCategoriesPage = () => {
 
   function kategoriOlustur(event) {
     axios
-      .post("http://localhost:5000/api/kategori_bireysel/olustur", {
+      .post("https://naushopping.com:5000/api/kategori_bireysel/olustur", {
         isim: event.target.isim.value,
         url: event.target.url.value,
         aciklama: event.target.aciklama.value,

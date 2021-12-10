@@ -16,7 +16,7 @@ const Profile_ChangePassword = () => {
       setDurum(2);
       axios
         .post(
-          "http://localhost:5000/api/profil/sifreguncelle",
+          "https://naushopping.com:5000/api/profil/sifreguncelle",
           {
             sifre: event.target.sifre.value,
           },

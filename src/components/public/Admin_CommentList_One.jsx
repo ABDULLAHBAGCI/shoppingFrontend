@@ -12,7 +12,7 @@ const Admin_CommentList_One = (props) => {
   function yorumOnayla() {
     axios
       .patch(
-        "http://localhost:5000/admin/api/yorum_islem?onay=1&id=" + props.id
+        "https://naushopping.com:5000/admin/api/yorum_islem?onay=1&id=" + props.id
       )
       .then(function (gelenVeri) {
         setState(1);
@@ -22,7 +22,7 @@ const Admin_CommentList_One = (props) => {
   function yorumReddet() {
     axios
       .patch(
-        "http://localhost:5000/admin/api/yorum_islem?onay=2&id=" + props.id
+        "https://naushopping.com:5000/admin/api/yorum_islem?onay=2&id=" + props.id
       )
       .then(function (gelenVeri) {
         setState(2);

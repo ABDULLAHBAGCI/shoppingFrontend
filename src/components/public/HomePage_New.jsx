@@ -7,7 +7,7 @@ const HomePage_New = () => {
 
   function urunleriAl() {
     axios
-      .get("http://localhost:5000/api/yeniurunler")
+      .get("https://naushopping.com:5000/api/yeniurunler")
       .then(function (gelenVeri) {
         setUrunler(gelenVeri.data);
       });

@@ -14,7 +14,7 @@ const AdminCommentList = () => {
 
   function yorumlariAl() {
     axios
-      .get("http://localhost:5000/admin/api/tumyorumlar?sayfa=" + sayfa)
+      .get("https://naushopping.com:5000/admin/api/tumyorumlar?sayfa=" + sayfa)
       .then(function (gelenVeri) {
         setYorumlar(gelenVeri.data);
         if (gelenVeri.data.length < 1) {

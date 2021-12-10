@@ -11,7 +11,7 @@ const Header_Login = () => {
 
   function girisKontrol() {
     axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("https://naushopping.com:5000/api/kullanici/giriskontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
@@ -27,7 +27,7 @@ const Header_Login = () => {
   function cikisYap() {
     setDurum(0);
     axios
-      .get("http://localhost:5000/api/kullanici/cikis", {
+      .get("https://naushopping.com:5000/api/kullanici/cikis", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {

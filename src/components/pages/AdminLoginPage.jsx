@@ -13,7 +13,7 @@ function Giris(props) {
 
     axios
       .post(
-        "http://localhost:5000/admin/api/kullanici_giris",
+        "https://naushopping.com:5000/admin/api/kullanici_giris",
         {
           email: event.target[0].value,
           sifre: event.target[1].value,

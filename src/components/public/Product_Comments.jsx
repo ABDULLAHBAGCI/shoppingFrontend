@@ -25,7 +25,7 @@ const Product_Comments = () => {
 
   function girisKontrol() {
     axios
-      .get("http://localhost:5000/api/kullanici/giriskontrol", {
+      .get("https://naushopping.com:5000/api/kullanici/giriskontrol", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
@@ -47,14 +47,14 @@ const Product_Comments = () => {
   const parametreler = useParams();
 
   function yorumlariAl() {
-    var adres = "http://localhost:5000/api/yorumlar/" + parametreler.id;
+    var adres = "https://naushopping.com:5000/api/yorumlar/" + parametreler.id;
     axios.get(adres).then(function (gelenVeri) {
       setYorumlar(gelenVeri.data);
     });
   }
 
   function yorumPuan() {
-    var adres = "http://localhost:5000/api/yorum/puan/" + parametreler.id;
+    var adres = "https://naushopping.com:5000/api/yorum/puan/" + parametreler.id;
     axios
       .get(adres)
       .then(function (gelenVeri) {

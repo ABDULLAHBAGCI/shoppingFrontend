@@ -29,7 +29,7 @@ const ContactDeliveryInfo_Page = () => {
 
   function bilgileriAl() {
     axios
-      .get("http://localhost:5000/api/profil/bilgiler", {
+      .get("https://naushopping.com:5000/api/profil/bilgiler", {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
