@@ -29,7 +29,7 @@ const Product_Comments = () => {
         withCredentials: true,
       })
       .then(function (gelenVeri) {
-        console.log("giriş yapıldı mı :", gelenVeri.data.sonuc);
+        console.log("is logged in :", gelenVeri.data.sonuc);
         if (gelenVeri.data.sonuc === true) {
           setUye({
             isim: gelenVeri.data.isim,

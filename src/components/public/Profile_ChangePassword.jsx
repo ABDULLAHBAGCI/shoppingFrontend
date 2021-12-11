@@ -44,7 +44,7 @@ const Profile_ChangePassword = () => {
           <form onSubmit={sifreDegistir}>
             <div className="form-row">
               <div className="col form-group">
-                <label>Şifre</label>
+                <label>Password</label>
                 <input name="sifre" type="password" className="form-control" />
               </div>
               <div className="col form-group">
@@ -58,10 +58,10 @@ const Profile_ChangePassword = () => {
             </div>
 
             <button className="btn btn-primary btn-block">
-              {durum === 0 && "Kaydet"}
-              {durum === 1 && "Güncellendi"}
-              {durum === 2 && "Kaydediliyor.."}
-              {durum === 3 && "Şifreler Uyuşmuyor"}
+              {durum === 0 && "Save"}
+              {durum === 1 && "Updated"}
+              {durum === 2 && "Saving Informations.."}
+              {durum === 3 && "Passwords Do Not Match!"}
             </button>
           </form>
         </div>

@@ -31,8 +31,8 @@ const Product_Card = (props) => {
           </ul>
           <small className="text-muted">{props.yildizsayisi}</small>
           <div className="price-wrap mt-2 text-center">
-            <span className="price">₺{props.ind_fiyat}</span>
-            <del className="price-old">₺{props.normal_fiyat}</del>
+            <span className="price">${props.ind_fiyat}</span>
+            <del className="price-old">${props.normal_fiyat}</del>
           </div>
         </div>
       </a>

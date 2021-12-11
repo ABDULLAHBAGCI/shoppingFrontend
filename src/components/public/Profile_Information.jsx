@@ -107,9 +107,9 @@ const Profile_Information = () => {
             </div>
 
             <button className="btn btn-primary btn-block">
-              {durum === 0 && "Kaydet"}
-              {durum === 1 && "Güncellendi"}
-              {durum === 2 && "Kaydediliyor.."}
+              {durum === 0 && "Save"}
+              {durum === 1 && "Updated"}
+              {durum === 2 && "Saving Informations.."}
             </button>
           </form>
         </div>
