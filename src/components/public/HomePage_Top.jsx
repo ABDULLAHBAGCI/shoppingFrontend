@@ -9,7 +9,7 @@ const HomePage_Top = () => {
             <div className="row">
               <div className="col-lg-5 col-md-5 col-sm-12 col-12">
                 <div className="shadow-sm card-banner">
-                  <div className="p-4" style={{ width: "75%" }}>
+                  <div className="p-4" style={{ width: "50%" }}>
                     <h5 className="card-title">Levi's Shirt</h5>
                     <p>
                     Don't miss the discount on 2021 Model Levi's brand shirts.
@@ -17,13 +17,14 @@ const HomePage_Top = () => {
                   </div>
                   <img
                     alt=""
-                    src="https://productimages.hepsiburada.net/l/38/600-800/10580777664562.jpg"
+                    src="https://images.pexels.com/photos/6787007/pexels-photo-6787007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                     height="150"
+                    width={260}
                     className="img-bg"
                   />
                 </div>
                 <div className="shadow-sm card-banner mt-2">
-                  <div className="p-4" style={{ width: "70%" }}>
+                  <div className="p-4" style={{ width: "50%" }}>
                     <h5 className="card-title">End of Season Sale</h5>
                     <p>
                     With the arrival of summer, there are discounts up to 70% on coats.
@@ -31,22 +32,24 @@ const HomePage_Top = () => {
                   </div>
                   <img
                     alt=""
-                    src="https://www.sporset.com/UserFiles/ProductImages/0/100340277/orj/lumberjack-arch-coat-erkek-mont-100340277-gri-91150.jpg"
+                    src="https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                     height="150"
+                    width={260}
                     className="img-bg"
                   />
                 </div>
 
                 <div className="shadow-sm card-banner  mt-2">
-                  <div className="p-4" style={{ width: "75%" }}>
+                  <div className="p-4" style={{ width: "50%" }}>
                     <h5 className="card-title">New Season Products</h5>
                     <p>
                       Have you looked at the new season trousers suitable for 2021's fashion?
                     </p>
                   </div>
                   <img
-                    src="https://cdn.dsmcdn.com/mnresize/415/622/Assets/ProductImages/oa/76/538202/1/5414782948293_2_org_zoom.jpg"
+                    src="https://images.pexels.com/photos/10453022/pexels-photo-10453022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=0&w=1260"
                     height="150"
+                    width={260}
                     className="img-bg"
                     alt=""
                   />
@@ -77,7 +80,7 @@ const HomePage_Top = () => {
                     <div className="carousel-item active">
                       <img
                         className="d-block w-100"
-                        src="https://images.pexels.com/photos/10040256/pexels-photo-10040256.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        src="https://images.pexels.com/photos/6567737/pexels-photo-6567737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                         alt="First slide"
                         alt=""
                       />
@@ -85,7 +88,7 @@ const HomePage_Top = () => {
                     <div className="carousel-item">
                       <img
                         className="d-block w-100"
-                        src="https://images.pexels.com/photos/10375856/pexels-photo-10375856.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        src="https://images.pexels.com/photos/3682293/pexels-photo-3682293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                         alt="Second slide"
                         alt=""
                       />
