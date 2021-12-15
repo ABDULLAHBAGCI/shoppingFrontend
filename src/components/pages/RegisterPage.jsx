@@ -91,7 +91,7 @@ const RegisterPage = () => {
                           autoComplete="off"
                           type="text"
                           class="form-control"
-                          placeholder="Soyisim giriniz"
+                          placeholder="Enter surname"
                           required
                         />
                       </div>
@@ -131,7 +131,7 @@ const RegisterPage = () => {
                           class="custom-control-input"
                           type="radio"
                           name="cinsiyet"
-                          value="Erkek"
+                          value="Male"
                         />
                         <span class="custom-control-label"> Men </span>
                       </label>
@@ -140,7 +140,7 @@ const RegisterPage = () => {
                           class="custom-control-input"
                           type="radio"
                           name="cinsiyet"
-                          value="Kadın"
+                          value="Female"
                         />
                         <span class="custom-control-label"> Women </span>
                       </label>
@@ -193,7 +193,7 @@ const RegisterPage = () => {
                         disabled={`${state.durum === 0 ? "" : "disabled"}`}
                       >
                         {state.durum === 0 ? (
-                          "Kayıt Ol"
+                          "Register"
                         ) : (
                           <div
                             class="spinner-border spinner-border-sm"

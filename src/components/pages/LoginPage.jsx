@@ -121,7 +121,7 @@ const LoginPage = () => {
                             <span className="sr-only">Loading...</span>
                           </div>
                         ) : (
-                          "Giriş Yap"
+                          "Login"
                         )}
                       </button>
                     </div>

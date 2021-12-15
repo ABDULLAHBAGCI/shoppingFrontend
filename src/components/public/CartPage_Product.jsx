@@ -184,8 +184,8 @@ const CartPage_Product = (props) => {
       </td>
       <td>
         <div className="price-wrap">
-          <var className="price">₺{(props.fiyat * miktar).toFixed(2)}</var>
-          <small className="text-muted">₺{props.fiyat} </small>
+          <var className="price">${(props.fiyat * miktar).toFixed(2)}</var>
+          <small className="text-muted">${props.fiyat} </small>
         </div>
       </td>
       <td className="text-right">

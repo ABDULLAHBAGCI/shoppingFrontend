@@ -46,7 +46,7 @@ const Profile_OrderHistory = () => {
                   <th scope="row">{index + 1}</th>
                   <td>{siparis.takip_no}</td>
                   <td>{siparis.tarih}</td>
-                  <td>₺{siparis.tutar}</td>
+                  <td>${siparis.tutar}</td>
                   <td>
                     {siparis.sonuc === true ? (
                       <b className="text-success">Delivered ✓</b>

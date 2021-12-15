@@ -176,7 +176,7 @@ const ContactDeliveryInfo_Page = () => {
                   <dl className="dlist-align">
                     <dt>Total:</dt>
                     <dd className="text-right text-dark b">
-                      <strong>₺{toplam.toFixed(2)}</strong>
+                      <strong>${toplam.toFixed(2)}</strong>
                     </dd>
                   </dl>
                   <hr />

@@ -48,7 +48,7 @@ const Profile_ActiveOrder = () => {
                       Paid
                     </span>
                     <br />
-                    <span className="b">Total: ₺{siparis.tutar} </span>
+                    <span className="b">Total: ${siparis.tutar} </span>
                   </p>
                 </div>
                 <div className="col-md-4">
@@ -105,7 +105,7 @@ const Profile_ActiveOrder = () => {
                         <figcaption className="info align-self-center">
                           <p className="title">{urun.isim}</p>
                           <span className="text-muted">
-                            ₺{urun.fiyat} x {urun.miktar}{" "}
+                            ${urun.fiyat} x {urun.miktar}{" "}
                           </span>
                         </figcaption>
                       </figure>

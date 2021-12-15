@@ -156,8 +156,8 @@ const Product_Detail = () => {
                   </div>
 
                   <div className="mb-3">
-                    <var className="price h4">₺{detay.ind_fiyat}</var>
-                    <del className="text-muted">₺{detay.normal_fiyat}</del>
+                    <var className="price h4">${detay.ind_fiyat}</var>
+                    <del className="text-muted">${detay.normal_fiyat}</del>
                   </div>
 
                   <p>{detay.aciklama}</p>

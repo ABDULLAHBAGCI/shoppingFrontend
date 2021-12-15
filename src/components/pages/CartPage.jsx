@@ -90,7 +90,7 @@ const CartPage = () => {
                   <dl className="dlist-align">
                     <dt>Total:</dt>
                     <dd className="text-right text-dark b">
-                      <strong>₺{toplamTutar.toFixed(2)}</strong>
+                      <strong>${toplamTutar.toFixed(2)}</strong>
                     </dd>
                   </dl>
                   <hr />

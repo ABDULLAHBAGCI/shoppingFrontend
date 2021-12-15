@@ -159,7 +159,7 @@ const Admin_OrderList_One = (props) => {
         <div className="col-sm-4">
           <b>{props.index}.</b> {bilgiler.tarih}
         </div>
-        <div className="col-sm-1">₺{bilgiler.tutar}</div>
+        <div className="col-sm-1">${bilgiler.tutar}</div>
         <div className="col-sm-4">{bilgiler.adres}</div>
         <div className="col-sm-2">
           {bilgiler.sonuc === true && <b className="text-success">Done</b>}
@@ -212,7 +212,7 @@ const Admin_OrderList_One = (props) => {
                       <i className="fab fa-lg fa-cc-visa"></i>Paid
                     </span>
                     <br />
-                    <span className="b">Total: ₺{bilgiler.tutar} </span>
+                    <span className="b">Total: ${bilgiler.tutar} </span>
                   </p>
                 </div>
                 <div className="col-md-4">
@@ -286,7 +286,7 @@ const Admin_OrderList_One = (props) => {
                         <figcaption className="info align-self-center">
                           <p className="title">{urun.isim}</p>
                           <span className="text-muted">
-                            ₺{urun.fiyat} x {urun.miktar}{" "}
+                            ${urun.fiyat} x {urun.miktar}{" "}
                           </span>
                         </figcaption>
                       </figure>
